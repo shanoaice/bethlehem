@@ -1,6 +1,7 @@
 {
   "name": "bethlehem",
-  "version": "0.1.0",
+  "version": "1.0.1",
+  "description": "A minimal, practical functional programming library for JavaScript",
   "license": "MIT",
   "author": "KsRyY",
   "main": "dist/index.js",
@@ -95,5 +96,8 @@
       "ts"
     ]
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com"
+  }
 }
