@@ -43,7 +43,7 @@
     "xo": "^0.25.3"
   },
   "resolutions": {
-    "**/typescript": "^3.8.0-dev.20200119"
+    "**/typescript": "3.8.0-dev.20200119"
   },
   "xo": {
     "extends": [
