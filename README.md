@@ -14,4 +14,4 @@ yarn watch
 npm run watch
 ```
 
-This will run the [ava](ava.li) in watch mode. Test suite will be rerun if there's any change in `src` or in the test file.
+This will run the [ava](http://ava.li) in watch mode. Test suite will be rerun if there's any change in `src` or in the test file.
