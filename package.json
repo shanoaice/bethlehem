@@ -1,0 +1,86 @@
+{
+  "name": "bethlehem",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "KsRyY",
+  "main": "dist/index.js",
+  "module": "dist/bethlehem.esm.js",
+  "typings": "dist/index.d.ts",
+  "unpkg": "dist/index.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "ava --verbose",
+    "lint": "xo"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@ava/babel": "^1",
+    "@babel/preset-typescript": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "@types/jest": "^24.0.25",
+    "ava": "^3.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-config-xo-typescript": "^0.24.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "esm": "^3.2.25",
+    "husky": "^4.0.6",
+    "lint-staged": "^10.0.0-beta.15",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "tsdx": "^0.12.3",
+    "tslib": "^1.10.0",
+    "typescript": "^3.8.0-dev.20200119",
+    "xo": "^0.25.3"
+  },
+  "resolutions": {
+    "**/typescript": "^3.8.0-dev.20200119"
+  },
+  "xo": {
+    "extends": [
+      "xo-typescript",
+      "rem",
+      "plugin:prettier/recommended",
+      "prettier/@typescript-eslint"
+    ],
+    "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "cases": {
+            "camelCase": true,
+            "pascalCase": true
+          }
+        }
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "xo --fix"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {},
+  "ava": {
+    "require": [
+      "esm",
+      "ts-node/register"
+    ],
+    "babel": true,
+    "extensions": [
+      "ts"
+    ]
+  }
+}
