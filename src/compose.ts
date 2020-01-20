@@ -1,3 +1,10 @@
+/**
+ * Performs left-to-right function composition. The leftmost function may have any arity; the remaining functions must be unary. **Warning: Unlike Ramda, this function performs left-to-right composition, not right-to-left.**
+ * ```js
+ * const f = compose(Math.pow, a => a + 1)
+ * f(2, 4) // 2^4 + 1
+ * ```
+ */
 const compose = function(
   ...middlewares: Array<(...args: any[]) => any>
 ): (...args: any[]) => any {

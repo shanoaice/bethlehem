@@ -1,3 +1,4 @@
+/** @ignore */
 const throwIfZero = function(
   value: number,
   errorMessage = 'Value "0" is not permitted'
