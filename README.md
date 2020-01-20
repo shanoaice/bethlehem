@@ -15,3 +15,11 @@ npm run watch
 ```
 
 This will run the [ava](http://ava.li) in watch mode. Test suite will be rerun if there's any change in `src` or in the test file.
+
+```bash
+yarn build
+# or npm
+npm run build
+```
+
+This will build all source code and put them in the `dist` folder. Declarations will be also built.
