@@ -21,7 +21,7 @@
   "peerDependencies": {},
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build:docs && lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "devDependencies": {
