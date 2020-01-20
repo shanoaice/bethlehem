@@ -11,7 +11,7 @@
     "dist"
   ],
   "scripts": {
-    "start": "tsdx watch",
+    "watch": "ava --watch",
     "build": "tsdx build",
     "test": "ava --verbose",
     "lint": "xo"
