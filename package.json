@@ -14,7 +14,8 @@
     "watch": "ava --watch",
     "build": "tsdx build",
     "test": "ava --verbose",
-    "lint": "xo"
+    "lint": "xo",
+    "prepublishOnly": "tsdx build"
   },
   "peerDependencies": {},
   "husky": {
