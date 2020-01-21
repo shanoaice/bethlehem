@@ -23,3 +23,7 @@ jobs:
         yarn test:coverage
       env:
         CI: true
+    - name: update coverage to codecov.io
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
