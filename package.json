@@ -16,7 +16,7 @@
     "build": "tsdx build --format cjs,esm,umd --name B",
     "build:docs": "typedoc src",
     "test": "ava --verbose",
-    "test:coverage": "c8 --all ava",
+    "test:coverage": "c8 ava --timeout 2m",
     "lint": "xo",
     "prepublishOnly": "tsdx build"
   },
