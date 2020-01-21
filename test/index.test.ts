@@ -6,6 +6,7 @@ import {
   and,
   compose,
   divide,
+  equal,
   every,
   F,
   multiply,
@@ -17,6 +18,7 @@ import {
   reversedDivide,
   reversedSubtract,
   some,
+  strictEqual,
   subtract,
   T
 } from '../src'
@@ -218,4 +220,30 @@ test('curried every', t => {
   const curriedEvery = every(predicate)
   t.true(curriedEvery([1, 1, 1, 1]))
   t.false(curriedEvery([2, 3, 4, 2]))
+})
+
+test('equal', t => {
+  t.true(equal(1, 1))
+  t.false(equal(1, 2))
+  t.true(equal(1, '1'))
+})
+
+test('curried equal', t => {
+  const equalsOne = equal(1)
+  t.true(equalsOne(1))
+  t.false(equalsOne(2))
+  t.true(equalsOne('1'))
+})
+
+test('strict equal', t => {
+  t.true(strictEqual(1, 1))
+  t.false(strictEqual(1, 2))
+  t.false(strictEqual(1, '1'))
+})
+
+test('curried strict equal', t => {
+  const equalsOne = strictEqual(1)
+  t.true(equalsOne(1))
+  t.false(equalsOne(2))
+  t.false(equalsOne('1'))
 })
