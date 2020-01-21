@@ -16,6 +16,7 @@
     "build": "tsdx build --format cjs,esm,umd --name B",
     "build:docs": "typedoc src",
     "test": "ava --verbose",
+    "test:coverage": "c8 ava",
     "lint": "xo",
     "prepublishOnly": "tsdx build"
   },
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@ava/babel": "1.0.0",
     "ava": "3.0.0",
+    "c8": "^7.0.1",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-rem": "4.0.0",
     "eslint-config-xo-typescript": "0.24.1",
@@ -94,6 +96,9 @@
     "babel": true,
     "extensions": [
       "ts"
+    ],
+    "files": [
+      "!dist/**/*"
     ]
   },
   "sideEffects": false,
