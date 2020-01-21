@@ -3,6 +3,7 @@ import always from './always'
 import and from './and'
 import compose from './compose'
 import divide from './divide'
+import equal from './equal'
 import every from './every'
 import F from './F'
 import multiply from './multiply'
@@ -14,6 +15,7 @@ import repeat from './repeat'
 import reversedDivide from './reversedDivide'
 import reversedSubtract from './reversedSubtract'
 import some from './some'
+import strictEqual from './strictEqual'
 import subtract from './subtract'
 import T from './T'
 
@@ -25,6 +27,7 @@ export {
   and,
   compose,
   divide,
+  equal,
   every,
   multiply,
   not,
@@ -35,5 +38,6 @@ export {
   reversedSubtract,
   reversedDivide,
   some,
+  strictEqual,
   subtract
 }
