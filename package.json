@@ -42,11 +42,11 @@
     "tsdx": "0.12.3",
     "tslib": "1.10.0",
     "typedoc": "0.16.8",
-    "typescript": "3.8.0-dev.20200122",
+    "typescript": "3.8.0-dev.20200123",
     "xo": "0.25.3"
   },
   "resolutions": {
-    "**/typescript": "3.8.0-dev.20200122"
+    "**/typescript": "3.8.0-dev.20200123"
   },
   "xo": {
     "ignores": [
