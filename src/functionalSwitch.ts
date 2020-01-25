@@ -1,10 +1,10 @@
-interface Case {
-  condition: (...args: any[]) => boolean
-  task: (...args: any[]) => any
+interface Case<Input, Output> {
+  condition: (...args: Input[]) => boolean
+  task: (...args: Input[]) => Output
 }
 
 /**
- * An functional version of switch. Recieves an array of cases (instance of interface [[Case]]) and returns a function. When calling this function, the arguments will be passed to the condition function of each cases, and if the condition function returns true, the task function of that case will be called with the same arguments and the result of the task will be returned.
+ * A functional version of `switch`. Recieves an array of cases (instance of interface [[Case]]) and returns a function. When calling this function, the arguments will be passed to the condition function of each cases, and if the condition function returns true, the task function of that case will be called with the same arguments and the result of the task will be returned.
  * ```js
  * const absoluteValue = functionalSwitch([
  *   {
@@ -25,7 +25,9 @@ interface Case {
  * absoluteValue(-3) //=> 3
  * ```
  */
-function functionalSwitch(cases: Case[]): (...args: any[]) => any {
+function functionalSwitch<Input, Output>(
+  cases: Array<Case<Input, Output>>
+): (...args: Input[]) => Output | undefined {
   return (...args) => {
     let result
 
