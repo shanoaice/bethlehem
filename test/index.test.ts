@@ -8,6 +8,7 @@ import {
   divide,
   equal,
   every,
+  functionalSwitch,
   F,
   multiply,
   not,
@@ -17,6 +18,7 @@ import {
   repeat,
   reversedDivide,
   reversedSubtract,
+  sequence,
   some,
   strictEqual,
   subtract,
@@ -246,4 +248,41 @@ test('curried strict equal', t => {
   t.true(equalsOne(1))
   t.false(equalsOne(2))
   t.false(equalsOne('1'))
+})
+
+test('sequence', t => {
+  t.deepEqual(sequence(1, 3), [1, 2, 3])
+  t.deepEqual(sequence(2, 4), [2, 3, 4])
+  t.deepEqual(sequence(3, 3), [3])
+  t.deepEqual(sequence(3, 1), [3, 2, 1])
+  t.deepEqual(sequence(4, 2), [4, 3, 2])
+})
+
+test('curried sequence', t => {
+  t.deepEqual(sequence(1)(3), [1, 2, 3])
+  t.deepEqual(sequence(2)(4), [2, 3, 4])
+  t.deepEqual(sequence(3)(3), [3])
+  t.deepEqual(sequence(3)(1), [3, 2, 1])
+  t.deepEqual(sequence(4)(2), [4, 3, 2])
+})
+
+test('functional switch', t => {
+  const abs = functionalSwitch([
+    {
+      condition: x => x > 0,
+      task: x => x
+    },
+    {
+      condition: x => x === 0,
+      task: _x => 0
+    },
+    {
+      condition: x => x < 0,
+      task: x => -x
+    }
+  ])
+
+  t.is(abs(3), 3)
+  t.is(abs(0), 0)
+  t.is(abs(-3), 3)
 })
