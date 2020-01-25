@@ -1,6 +1,22 @@
 import functionalSwitch from './functionalSwitch'
 
+/**
+ * Returns an array containing a sequence from a to b. If `a === b`, the function will return `[a]` (curried)
+ * ```js
+ * sequence(1)(3) //=> [1, 2, 3]
+ * sequence(1)(1) //=> [1]
+ * sequence(3)(1) //=> [3, 2, 1]
+ * ```
+ */
 function sequence(a: number): (b: number) => number[]
+/**
+ * Returns an array containing a sequence from a to b. If `a === b`, the function will return `[a]`
+ * ```js
+ * sequence(1, 3) //=> [1, 2, 3]
+ * sequence(1, 1) //=> [1]
+ * sequence(3, 1) //=> [3, 2, 1]
+ * ```
+ */
 function sequence(a: number, b: number): number[]
 function sequence(a: number, b?: number): number[] | ((b: number) => number[]) {
   let start = a
