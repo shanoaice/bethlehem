@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;not&quot; | bethlehem</title>
+	<title>&quot;sequence&quot; | bethlehem</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_not_.html">&quot;not&quot;</a>
+					<a href="_sequence_.html">&quot;sequence&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;not&quot;</h1>
+			<h1>External module &quot;sequence&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_not_.html#not" class="tsd-kind-icon">not</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_sequence_.html#sequence" class="tsd-kind-icon">sequence</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,36 +82,77 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="not" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> not</h3>
+					<a name="sequence" class="tsd-anchor"></a>
+					<h3>sequence</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">not<span class="tsd-signature-symbol">(</span>operand<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">sequence<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">sequence<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KsRyY/bethlehem/blob/307f72b/src/not.ts#L12">not.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/KsRyY/bethlehem/blob/307f72b/src/sequence.ts#L11">sequence.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>A function that returns the <code>!</code> of its argument.</p>
-									<pre><code class="language-js">not(<span class="hljs-literal">true</span>) <span class="hljs-comment">//=&gt; false</span>
-not(<span class="hljs-literal">false</span>) <span class="hljs-comment">//=&gt; true</span>
-not(<span class="hljs-number">0</span>) <span class="hljs-comment">//=&gt; true</span>
-not(<span class="hljs-number">1</span>) <span class="hljs-comment">//=&gt; false</span>
-not(<span class="hljs-string">''</span>) <span class="hljs-comment">//=&gt; true</span>
-not(<span class="hljs-string">'a'</span>) <span class="hljs-comment">//=&gt; false</span></code></pre>
+									<p>Returns an array containing a sequence from a to b. If <code>a === b</code>, the function will return <code>[a]</code> (curried)</p>
+									<pre><code class="language-js">sequence(<span class="hljs-number">1</span>)(<span class="hljs-number">3</span>) <span class="hljs-comment">//=&gt; [1, 2, 3]</span>
+sequence(<span class="hljs-number">1</span>)(<span class="hljs-number">1</span>) <span class="hljs-comment">//=&gt; [1]</span>
+sequence(<span class="hljs-number">3</span>)(<span class="hljs-number">1</span>) <span class="hljs-comment">//=&gt; [3, 2, 1]</span></code></pre>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>operand: <span class="tsd-signature-type">any</span></h5>
+									<h5>a: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-siganture">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>b: <span class="tsd-signature-type">number</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/KsRyY/bethlehem/blob/307f72b/src/sequence.ts#L20">sequence.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an array containing a sequence from a to b. If <code>a === b</code>, the function will return <code>[a]</code></p>
+									<pre><code class="language-js">sequence(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">//=&gt; [1, 2, 3]</span>
+sequence(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>) <span class="hljs-comment">//=&gt; [1]</span>
+sequence(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>) <span class="hljs-comment">//=&gt; [3, 2, 1]</span></code></pre>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -156,7 +197,7 @@ not(<span class="hljs-string">'a'</span>) <span class="hljs-comment">//=&gt; fal
 					<li class=" tsd-kind-external-module">
 						<a href="_multiply_.html">&quot;multiply&quot;</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_not_.html">&quot;not&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -177,7 +218,7 @@ not(<span class="hljs-string">'a'</span>) <span class="hljs-comment">//=&gt; fal
 					<li class=" tsd-kind-external-module">
 						<a href="_reversedsubtract_.html">&quot;reversed<wbr>Subtract&quot;</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_sequence_.html">&quot;sequence&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -194,7 +235,7 @@ not(<span class="hljs-string">'a'</span>) <span class="hljs-comment">//=&gt; fal
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_not_.html#not" class="tsd-kind-icon">not</a>
+						<a href="_sequence_.html#sequence" class="tsd-kind-icon">sequence</a>
 					</li>
 				</ul>
 			</nav>
