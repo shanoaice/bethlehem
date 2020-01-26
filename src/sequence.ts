@@ -8,7 +8,7 @@ import functionalSwitch from './functionalSwitch'
  * sequence(3)(1) //=> [3, 2, 1]
  * ```
  */
-function sequence(a: number): (b: number) => number[]
+function sequence(a: number): (b: number) => number[] | undefined
 /**
  * Returns an array containing a sequence from a to b. If `a === b`, the function will return `[a]`
  * ```js
@@ -17,12 +17,15 @@ function sequence(a: number): (b: number) => number[]
  * sequence(3, 1) //=> [3, 2, 1]
  * ```
  */
-function sequence(a: number, b: number): number[]
-function sequence(a: number, b?: number): number[] | ((b: number) => number[]) {
+function sequence(a: number, b: number): number[] | undefined
+function sequence(
+  a: number,
+  b?: number
+): number[] | ((b: number) => number[] | undefined) | undefined {
   let start = a
 
   if (typeof b !== 'undefined') {
-    return functionalSwitch([
+    return functionalSwitch<number, number[]>([
       {
         condition: (a, b) => a < b,
         task: () => new Array(b - a + 1).fill(0).map(() => start++)
@@ -39,7 +42,7 @@ function sequence(a: number, b?: number): number[] | ((b: number) => number[]) {
   }
 
   return b =>
-    functionalSwitch([
+    functionalSwitch<number, number[]>([
       {
         condition: (a, b) => a < b,
         task: () => new Array(b - a + 1).fill(0).map(() => start++)
