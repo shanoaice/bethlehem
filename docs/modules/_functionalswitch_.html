@@ -73,13 +73,13 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_functionalswitch_.case.html" class="tsd-kind-icon">Case</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="../interfaces/_functionalswitch_.case.html" class="tsd-kind-icon">Case</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_functionalswitch_.html#functionalswitch" class="tsd-kind-icon">functional<wbr>Switch</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_functionalswitch_.html#functionalswitch" class="tsd-kind-icon">functional<wbr>Switch</a></li>
 							</ul>
 						</section>
 					</div>
@@ -87,22 +87,22 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="functionalswitch" class="tsd-anchor"></a>
 					<h3>functional<wbr>Switch</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">functional<wbr>Switch<span class="tsd-signature-symbol">(</span>cases<span class="tsd-signature-symbol">: </span><a href="../interfaces/_functionalswitch_.case.html" class="tsd-signature-type">Case</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">functional<wbr>Switch&lt;Input, Output&gt;<span class="tsd-signature-symbol">(</span>cases<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_functionalswitch_.case.html" class="tsd-signature-type">Case</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Input</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Output</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Input</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Output</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KsRyY/bethlehem/blob/307f72b/src/functionalSwitch.ts#L28">functionalSwitch.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/KsRyY/bethlehem/blob/0d557f4/src/functionalSwitch.ts#L28">functionalSwitch.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>An functional version of switch. Recieves an array of cases (instance of interface <a href="../interfaces/_functionalswitch_.case.html">Case</a>) and returns a function. When calling this function, the arguments will be passed to the condition function of each cases, and if the condition function returns true, the task function of that case will be called with the same arguments and the result of the task will be returned.</p>
+									<p>A functional version of <code>switch</code>. Recieves an array of cases (instance of interface <a href="../interfaces/_functionalswitch_.case.html">Case</a>) and returns a function. When calling this function, the arguments will be passed to the condition function of each cases, and if the condition function returns true, the task function of that case will be called with the same arguments and the result of the task will be returned.</p>
 									<pre><code class="language-js"><span class="hljs-keyword">const</span> absoluteValue = functionalSwitch([
   {
     <span class="hljs-attr">condition</span>: <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x &gt; <span class="hljs-number">0</span>,
@@ -122,27 +122,36 @@ absoluteValue(<span class="hljs-number">0</span>) <span class="hljs-comment">//=
 absoluteValue(<span class="hljs-number">-3</span>) <span class="hljs-comment">//=&gt; 3</span></code></pre>
 								</div>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>Input</h4>
+								</li>
+								<li>
+									<h4>Output</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>cases: <a href="../interfaces/_functionalswitch_.case.html" class="tsd-signature-type">Case</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>cases: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_functionalswitch_.case.html" class="tsd-signature-type">Case</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Input</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Output</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Input</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Output</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter-siganture">
 									<ul class="tsd-signatures tsd-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Input</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Output</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 									</ul>
 									<ul class="tsd-descriptions">
 										<li class="tsd-description">
 											<h4 class="tsd-parameters-title">Parameters</h4>
 											<ul class="tsd-parameters">
 												<li>
-													<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+													<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">Input</span><span class="tsd-signature-symbol">[]</span></h5>
 												</li>
 											</ul>
-											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Output</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 										</li>
 									</ul>
 								</li>
@@ -184,6 +193,9 @@ absoluteValue(<span class="hljs-number">-3</span>) <span class="hljs-comment">//
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_every_.html">&quot;every&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_functionalif_.html">&quot;functional<wbr>If&quot;</a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_functionalswitch_.html">&quot;functional<wbr>Switch&quot;</a>
@@ -228,10 +240,10 @@ absoluteValue(<span class="hljs-number">-3</span>) <span class="hljs-comment">//
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../interfaces/_functionalswitch_.case.html" class="tsd-kind-icon">Case</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_functionalswitch_.html#functionalswitch" class="tsd-kind-icon">functional<wbr>Switch</a>
 					</li>
 				</ul>
