@@ -6,6 +6,7 @@ import divide from './divide'
 import equal from './equal'
 import every from './every'
 import F from './F'
+import functionalIf from './functionalIf'
 import functionalSwitch from './functionalSwitch'
 import multiply from './multiply'
 import not from './not'
@@ -31,6 +32,7 @@ export {
   divide,
   equal,
   every,
+  functionalIf,
   functionalSwitch,
   multiply,
   not,

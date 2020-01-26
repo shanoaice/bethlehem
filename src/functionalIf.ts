@@ -8,8 +8,8 @@ type curriedFunctionalIf<Input, Output> = (
  * ```js
  * const negativity = functionalIf(x => x < 0)(() => 'negative', () => 'positive or zero')
  * negativity(-1) //=> 'negative'
- * negativity(0) //=> undefined
- * negativity(1) //=> undefined
+ * negativity(0) //=> 'positive or zero
+ * negativity(1) //=> ‘positive or zero’
  * ```
  */
 function functionalIf<Input, Output>(
@@ -42,13 +42,14 @@ function functionalIf<Input, Output>(
         return task(...args)
       }
 
+      console.log(elseTask)
       if (typeof elseTask !== 'undefined') {
         return elseTask(...args)
       }
     }
   }
 
-  return (task => {
+  return ((task, elseTask) => {
     if (typeof task !== 'undefined') {
       return (...args) => {
         if (condition(...args)) {
