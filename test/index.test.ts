@@ -8,6 +8,7 @@ import {
   divide,
   equal,
   every,
+  functionalIf,
   functionalSwitch,
   F,
   multiply,
@@ -269,7 +270,7 @@ test('curried sequence', t => {
 test('functional switch', t => {
   const abs = functionalSwitch([
     {
-      condition: x => x > 0,
+      condition: (x: number) => x > 0,
       task: x => x
     },
     {
@@ -285,4 +286,25 @@ test('functional switch', t => {
   t.is(abs(3), 3)
   t.is(abs(0), 0)
   t.is(abs(-3), 3)
+})
+
+test('functional if', t => {
+  const negativity = functionalIf<number, string>(
+    (x: number) => x < 0,
+    () => 'negative',
+    () => 'positive or zero'
+  )
+  t.is(negativity(-1), 'negative')
+  t.is(negativity(0), 'positive or zero')
+  t.is(negativity(1), 'positive or zero')
+})
+
+test('curried functional if', t => {
+  const negativity = functionalIf((x: number) => x < 0)(
+    () => 'negative',
+    () => 'positive or zero'
+  )
+  t.is(negativity(-1), 'negative')
+  t.is(negativity(0), 'positive or zero')
+  t.is(negativity(1), 'positive or zero')
 })
