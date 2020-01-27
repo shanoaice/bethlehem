@@ -17,9 +17,7 @@ function divide(a: number, b?: number): number | ((b: number) => number) {
     return a / b
   }
 
-  return (b: number) => {
-    return a / b
-  }
+  return (b: number) => divide(a, b)
 }
 
 export default divide

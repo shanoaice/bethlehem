@@ -20,9 +20,7 @@ function reversedDivide(
     return b / a
   }
 
-  return (b: number) => {
-    return b / a
-  }
+  return (b: number) => reversedDivide(a, b)
 }
 
 export default reversedDivide

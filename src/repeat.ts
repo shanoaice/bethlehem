@@ -19,9 +19,7 @@ function repeat<T>(times: number, value?: any): any[] | CurriedRepeat<T> {
     return new Array(times).fill(value)
   }
 
-  return function<T>(value: T): T[] {
-    return new Array(times).fill(value)
-  }
+  return value => repeat(times, value)
 }
 
 export default repeat

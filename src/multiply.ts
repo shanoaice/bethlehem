@@ -17,9 +17,7 @@ function multiply(a: number, b?: number): number | ((b: number) => number) {
     return a * b
   }
 
-  return (b: number) => {
-    return a * b
-  }
+  return (b: number) => multiply(a, b)
 }
 
 export default multiply

@@ -26,8 +26,7 @@ function equal(a: any, b?: any): boolean | ((b: any) => boolean) {
     return a == b
   }
 
-  // eslint-disable-next-line eqeqeq
-  return b => a == b
+  return b => equal(a, b)
 }
 
 export default equal

@@ -41,21 +41,7 @@ function sequence(
     ])(a, b)
   }
 
-  return b =>
-    functionalSwitch<number, number[]>([
-      {
-        condition: (a, b) => a < b,
-        task: () => new Array(b - a + 1).fill(0).map(() => start++)
-      },
-      {
-        condition: (a, b) => a === b,
-        task: () => [a]
-      },
-      {
-        condition: (a, b) => a > b,
-        task: () => new Array(a - b + 1).fill(0).map(() => start--)
-      }
-    ])(a, b)
+  return b => sequence(a, b)
 }
 
 export default sequence

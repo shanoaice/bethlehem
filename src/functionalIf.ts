@@ -49,19 +49,7 @@ function functionalIf<Input, Output>(
     }
   }
 
-  return ((task, elseTask) => {
-    if (typeof task !== 'undefined') {
-      return (...args) => {
-        if (condition(...args)) {
-          return task(...args)
-        }
-
-        if (typeof elseTask !== 'undefined') {
-          return elseTask(...args)
-        }
-      }
-    }
-  }) as curriedFunctionalIf<Input, Output>
+  return ((task, elseTask) => functionalIf(condition, task, elseTask)) as curriedFunctionalIf<Input, Output>
 }
 
 export default functionalIf

@@ -31,13 +31,7 @@ function nth<T>(index: number, list?: T[]): T | CurriedNth<T> | never {
     return list[index - 1]
   }
 
-  return (list: T[]) => {
-    if (negativity(index)) {
-      return list[list.length + index]
-    }
-
-    return list[index - 1]
-  }
+  return (list: T[]) => nth(index, list)
 }
 
 export default nth

@@ -17,7 +17,7 @@ function subtract(a: number, b?: number): number | ((b: number) => number) {
     return a - b
   }
 
-  return (b: number) => a - b
+  return (b: number) => subtract(a, b)
 }
 
 export default subtract

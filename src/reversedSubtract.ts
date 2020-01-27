@@ -20,9 +20,7 @@ function reversedSubtract(
     return b - a
   }
 
-  return (b: number) => {
-    return b - a
-  }
+  return (b: number) => reversedSubtract(a, b)
 }
 
 export default reversedSubtract

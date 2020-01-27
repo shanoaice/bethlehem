@@ -25,7 +25,7 @@ function and(a: boolean, b?: boolean): boolean | CurriedAnd {
     return a && b
   }
 
-  return (b: boolean) => a && b
+  return (b: boolean) => and(a, b)
 }
 
 export default and

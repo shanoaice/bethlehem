@@ -27,7 +27,7 @@ function some<T>(
     return list.some(predicate)
   }
 
-  return (list: T[]) => list.some(predicate)
+  return (list: T[]) => some(predicate, list)
 }
 
 export default some

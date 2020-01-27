@@ -25,7 +25,7 @@ function or(a: boolean, b?: boolean): boolean | CurriedOr {
     return a || b
   }
 
-  return (b: boolean) => a || b
+  return (b: boolean) => or(a, b)
 }
 
 export default or

@@ -17,7 +17,7 @@ function add(a: number, b?: number): number | ((b: number) => number) {
     return a + b
   }
 
-  return (b: number) => a + b
+  return (b: number) => add(a, b)
 }
 
 export default add

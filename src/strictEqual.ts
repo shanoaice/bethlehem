@@ -21,7 +21,7 @@ function strictEqual(a: any, b?: any): boolean | ((b: any) => boolean) {
     return a === b
   }
 
-  return b => a === b
+  return b => strictEqual(a, b)
 }
 
 export default strictEqual
