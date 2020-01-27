@@ -23,6 +23,7 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "jsx": "react",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowJs": false
   }
 }
