@@ -24,10 +24,20 @@ function every<T>(
   list?: T[]
 ): boolean | CurriedEvery<T> {
   if (list) {
-    return list.every(predicate)
+    let i = 0
+
+    while(i < list.length) {
+      if(!predicate(list[i])) {
+        return false
+      }
+
+      i++
+    }
+
+    return true
   }
 
-  return (list: T[]) => list.every(predicate)
+  return (list: T[]) => every(predicate, list)
 }
 
 export default every
