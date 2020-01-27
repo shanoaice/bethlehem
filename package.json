@@ -19,7 +19,7 @@
     "test:coverage": "c8 ava --timeout 2m && c8 report -r lcov",
     "lint": "xo",
     "prepublishOnly": "tsdx build --format cjs,esm,umd --name B",
-    "benchmark": "node benchmark/index.js -r benchmark/enablePowerAssert.js"
+    "benchmark": "node benchmark/index.js -r benchmark/enable-power-assert.js"
   },
   "peerDependencies": {},
   "husky": {
@@ -81,7 +81,17 @@
         "extends": [
           "rem",
           "plugin:prettier/recommended"
-        ]
+        ],
+        "rules": {
+          "unicorn/filename-case": [
+            "error",
+            {
+              "cases": {
+                "kebabCase": true
+              }
+            }
+          ]
+        }
       }
     ]
   },
