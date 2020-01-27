@@ -5,12 +5,12 @@ const rambda = require('rambda')
 const bethlehem = require('..')
 
 suite('curried add', s => {
-  const a = 2000
-  const b = 3000
+  const a = 2
+  const b = 3
   let c
 
   s.cycle(() => {
-    assert.strictEqual(c, 5000)
+    assert.strictEqual(c, 5)
     c = undefined
   })
 
@@ -28,12 +28,12 @@ suite('curried add', s => {
 })
 
 suite('add', s => {
-  const a = 2000
-  const b = 3000
+  const a = 2
+  const b = 3
   let c
 
   s.cycle(() => {
-    assert.strictEqual(c, 5000)
+    assert.strictEqual(c, 5)
     c = undefined
   })
 
@@ -51,12 +51,12 @@ suite('add', s => {
 })
 
 suite('multiply', s => {
-  const a = 300
-  const b = 200
+  const a = 3
+  const b = 2
   let c
 
   s.cycle(() => {
-    assert.strictEqual(c, 60000)
+    assert.strictEqual(c, 6)
     c = undefined
   })
 
@@ -74,12 +74,12 @@ suite('multiply', s => {
 })
 
 suite('curried multiply', s => {
-  const a = 300
-  const b = 200
+  const a = 3
+  const b = 2
   let c
 
   s.cycle(() => {
-    assert.strictEqual(c, 60000)
+    assert.strictEqual(c, 6)
     c = undefined
   })
 
@@ -121,6 +121,14 @@ suite('subtract', s => {
   s.bench('bethlehem (reversed)', () => {
     c = bethlehem.reversedSubtract(b, a)
   })
+
+  s.bench('ramda (reversed with flip)', () => {
+    c = ramda.flip(ramda.subtract)(b, a)
+  })
+
+  s.bench('rambda (reversed with flip)', () => {
+    c = rambda.flip(rambda.subtract)(b, a)
+  })
 })
 
 suite('curried subtract', s => {
@@ -152,6 +160,14 @@ suite('curried subtract', s => {
   s.bench('ramda (reversed with placeholder)', () => {
     c = ramda.subtract(ramda.__, b)(a)
   })
+
+  s.bench('ramda (reversed with flip)', () => {
+    c = ramda.flip(ramda.subtract)(b)(a)
+  })
+
+  s.bench('rambda (reversed with flip)', () => {
+    c = rambda.flip(rambda.subtract)(b)(a)
+  })
 })
 
 suite('divide', s => {
@@ -178,6 +194,14 @@ suite('divide', s => {
 
   s.bench('bethlehem (reversed)', () => {
     c = bethlehem.reversedDivide(b, a)
+  })
+
+  s.bench('ramda (reversed with flip)', () => {
+    c = ramda.flip(ramda.divide)(b, a)
+  })
+
+  s.bench('rambda (reversed with flip)', () => {
+    c = rambda.flip(rambda.divide)(b, a)
   })
 })
 
@@ -209,5 +233,59 @@ suite('curried divide', s => {
 
   s.bench('ramda (reversed with placeholder)', () => {
     c = ramda.divide(ramda.__, b)(a)
+  })
+
+  s.bench('ramda (reversed with flip)', () => {
+    c = ramda.flip(ramda.divide)(b)(a)
+  })
+
+  s.bench('rambda (reversed with flip)', () => {
+    c = rambda.flip(rambda.divide)(b)(a)
+  })
+})
+
+suite('all/every', s => {
+  const testArray = new Array(5).fill(1)
+  const predicate = x => x === 1
+  let result
+
+  s.cycle(() => {
+    assert.strictEqual(result, true)
+    result = undefined
+  })
+
+  s.bench('ramda', () => {
+    result = ramda.all(predicate, testArray)
+  })
+
+  s.bench('rambda', () => {
+    result = rambda.all(predicate, testArray)
+  })
+
+  s.bench('bethlehem', () => {
+    result = bethlehem.every(predicate, testArray)
+  })
+})
+
+suite('curried all/every', s => {
+  const testArray = new Array(5).fill(1)
+  const predicate = x => x === 1
+  let result
+
+  s.cycle(() => {
+    assert.strictEqual(result, true)
+    result = undefined
+  })
+
+  s.bench('ramda', () => {
+    result = ramda.all(predicate)(testArray)
+  })
+
+  s.bench('rambda', () => {
+    result = rambda.all(predicate)(testArray)
+  })
+
+  s.bench('bethlehem', () => {
+    result = bethlehem.every(predicate)(testArray)
   })
 })
