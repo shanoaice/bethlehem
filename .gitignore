@@ -8,3 +8,6 @@ node_modules
 dist
 coverage
 .vscode
+
+# compiled code
+benchmark/impl-bench/all-any/public/index.js
