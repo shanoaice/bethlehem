@@ -1,11 +1,12 @@
 
 {
   extends: [
-    "config:base"
+    'config:base'
   ],
   automerge: true,
   major: {
     automerge: false,
   },
-  commitMessagePrefix: "📦Deps: "
+  commitMessagePrefix: '📦Deps: ',
+  ignoreDeps: ['ramda', 'rambda']
 }
