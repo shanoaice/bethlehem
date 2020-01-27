@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "browserify": "^16.5.0",
-    "chuhai": "^1.2.0"
+    "browserify": "16.5.0",
+    "chuhai": "1.2.0"
   },
   "scripts": {
     "build": "browserify all-any.js > public/index.js"
