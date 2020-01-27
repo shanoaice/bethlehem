@@ -6,12 +6,12 @@ Bethlehem is a minimal functional programming library for JavaScript. It is insp
 
 ## Usage
 
-First, install bethlehem:
+First, install bethlehem (tips: because there are known problems before v1.3.0, it is better to set your minimum version of bethlehem to 1.3.0):
 
 ```bash
-yarn add bethlehem
+yarn add bethlehem@^1.3.0
 # or npm
-npm i bethlehem
+npm i bethlehem@^1.3.0
 ```
 
 Then, cherry-pick the function(s) you want:
