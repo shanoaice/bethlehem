@@ -18,7 +18,8 @@
     "test": "ava --verbose",
     "test:coverage": "c8 ava --timeout 2m && c8 report -r lcov",
     "lint": "xo",
-    "prepublishOnly": "tsdx build"
+    "prepublishOnly": "tsdx build --format cjs,esm,umd --name B",
+    "benchmark": "node benchmark/index.js -r benchmark/enablePowerAssert.js"
   },
   "peerDependencies": {},
   "husky": {
@@ -30,14 +31,19 @@
     "@ava/babel": "1.0.0",
     "ava": "3.0.0",
     "c8": "7.0.1",
+    "chuhai": "^1.2.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-rem": "4.0.0",
     "eslint-config-xo-typescript": "0.24.1",
     "eslint-plugin-prettier": "3.1.2",
     "esm": "3.2.25",
+    "espower-loader": "^1.2.2",
     "husky": "4.2.1",
     "lint-staged": "10.0.2",
+    "power-assert": "^1.6.1",
     "prettier": "1.19.1",
+    "rambda": "^4.4.0",
+    "ramda": "^0.26.1",
     "ts-node": "8.6.2",
     "tsdx": "0.12.3",
     "tslib": "1.10.0",
@@ -71,7 +77,7 @@
     },
     "overrides": [
       {
-        "files": "scripts/**/*.js",
+        "files": "benchmark/**/*.js",
         "extends": [
           "rem",
           "plugin:prettier/recommended"
