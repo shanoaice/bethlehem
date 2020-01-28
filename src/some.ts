@@ -8,6 +8,8 @@ type CurriedSome<T> = (list: T[]) => boolean
  * some(predicate)([1, 3, 1, 1]) //=> true
  * some(predicate)([1, 1, 1, 1]) //=> false
  * ```
+ *
+ * Similar to the Array.prototype.some method, the predicate will also recieve the current index and the current list as the second and the third parameter, respectively.
  */
 function some<T>(predicate: Predicate<T>): CurriedSome<T>
 /**
@@ -16,6 +18,8 @@ function some<T>(predicate: Predicate<T>): CurriedSome<T>
  * const predicate = a => a == 3
  * some(predicate, [1, 3, 1, 1]) //=> true
  * some(predicate, [1, 1, 1, 1]) //=> false
+ *
+ * Similar to the Array.prototype.some method, the predicate will also recieve the current index and the current list as the second and the third parameter, respectively.
  * ```
  */
 function some<T>(predicate: Predicate<T>, list: T[]): boolean

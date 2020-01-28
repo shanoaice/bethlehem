@@ -8,6 +8,8 @@ type CurriedEvery<T> = (list: T[]) => boolean
  * every(predicate)([3, 3, 3, 3]) //=> true
  * every(predicate)([3, 1, 3, 3]) //=> false
  * ```
+ *
+ * Similar to the Array.prototype.every method, the predicate will also recieve the current index and the current list as the second and the third parameter, respectively.
  */
 function every<T>(predicate: Predicate<T>): CurriedEvery<T>
 /**
@@ -17,6 +19,8 @@ function every<T>(predicate: Predicate<T>): CurriedEvery<T>
  * every(predicate, [3, 3, 3, 3]) //=> true
  * every(predicate, [3, 1, 3, 3]) //=> false
  * ```
+ *
+ * Similar to the Array.prototype.every method, the predicate will also recieve the current index and the current list as the second and the third parameter, respectively.
  */
 function every<T>(predicate: Predicate<T>, list: T[]): boolean
 function every<T>(
