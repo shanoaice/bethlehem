@@ -7648,7 +7648,7 @@ shellwords@^0.1.1:
   resolved "https://registry.npm.taobao.org/shellwords/download/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha1-1rkYHBpI05cyTISHHvvPxz/AZUs=
 
-shx@^0.3.2:
+shx@0.3.2:
   version "0.3.2"
   resolved "https://registry.npm.taobao.org/shx/download/shx-0.3.2.tgz#40501ce14eb5e0cbcac7ddbd4b325563aad8c123"
   integrity sha1-QFAc4U614MvKx929SzJVY6rYwSM=
