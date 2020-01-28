@@ -8,9 +8,12 @@ import {
   divide,
   equal,
   every,
+  F,
   functionalIf,
   functionalSwitch,
-  F,
+  instanceOf,
+  isNil,
+  join,
   multiply,
   not,
   nth,
@@ -307,4 +310,44 @@ test('curried functional if', t => {
   t.is(negativity(-1), 'negative')
   t.is(negativity(0), 'positive or zero')
   t.is(negativity(1), 'positive or zero')
+})
+
+test('instanceOf', t => {
+  // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
+  t.true(instanceOf(Number, new Number(1)))
+  t.false(instanceOf(Number, 1))
+})
+
+test('curried instanceOf', t => {
+  const instanceOfNumber = instanceOf(Number)
+
+  // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
+  t.true(instanceOfNumber(new Number(1)))
+  t.false(instanceOfNumber(1))
+})
+
+test('isNil', t => {
+  t.true(isNil(null))
+  t.true(isNil(undefined))
+  t.false(isNil(0))
+  t.false(isNil(false))
+  t.false(isNil(1))
+})
+
+test('join', t => {
+  const testArrayOne = [1, 2, 3, 4, 5]
+  const testArrayTwo = ['beep', 'blorp', 'bleep']
+  const seperator = '-'
+
+  t.is(join(seperator, testArrayOne), '1-2-3-4-5')
+  t.is(join(seperator, testArrayTwo), 'beep-blorp-bleep')
+})
+
+test('curried join', t => {
+  const testArrayOne = [1, 2, 3, 4, 5]
+  const testArrayTwo = ['beep', 'blorp', 'bleep']
+  const joinWithDash = join('-')
+
+  t.is(joinWithDash(testArrayOne), '1-2-3-4-5')
+  t.is(joinWithDash(testArrayTwo), 'beep-blorp-bleep')
 })
