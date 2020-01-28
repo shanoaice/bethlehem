@@ -8,5 +8,6 @@
     automerge: false,
   },
   commitMessagePrefix: '📦Deps: ',
-  ignoreDeps: ['ramda', 'rambda']
+  ignoreDeps: ['ramda', 'rambda'],
+  yarnrc: 'registry "https://registry.npm.taobao.org"'
 }
