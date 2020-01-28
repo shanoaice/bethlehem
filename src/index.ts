@@ -8,6 +8,9 @@ import every from './every'
 import F from './F'
 import functionalIf from './functionalIf'
 import functionalSwitch from './functionalSwitch'
+import instanceOf from './instanceOf'
+import isNil from './isNil'
+import join from './join'
 import multiply from './multiply'
 import not from './not'
 import nth from './nth'
@@ -34,6 +37,9 @@ export {
   every,
   functionalIf,
   functionalSwitch,
+  instanceOf,
+  isNil,
+  join,
   multiply,
   not,
   nth,
