@@ -1,16 +1,16 @@
 /**
- * Test if the the second argument is an instance of the first argument. (curried)
+ * Join elements in an array together with a specified seperator (curried)
  * ```js
- * instanceOf(Number)(new Number(1)) //=> true
- * instanceOf(Number)(1) //=> false
+ * join([1, 2, 3])('-') //=> '1-2-3'
+ * join(['la', 'laa', 'lala])('-') //=> 'la-laa-lala'
  * ```
  */
 function join(list: Array<number | string>): (seperator: string) => string
 /**
- * Test if the the second argument is an instance of the first argument.
+ * Join elements in an array together with a specified seperator (curried)
  * ```js
- * instanceOf(Number, new Number(1)) //=> true
- * instanceOf(Number, 1) //=> false
+ * join([1, 2, 3], '-') //=> '1-2-3'
+ * join(['la', 'laa', 'lala], '-') //=> 'la-laa-lala'
  * ```
  */
 function join(list: Array<number | string>, seperator: string): string
