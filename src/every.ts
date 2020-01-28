@@ -1,4 +1,4 @@
-type Predicate<T> = (arg1: T) => boolean
+type Predicate<T> = (value: T, index: number, list: T[]) => boolean
 type CurriedEvery<T> = (list: T[]) => boolean
 
 /**
@@ -26,8 +26,8 @@ function every<T>(
   if (list) {
     let i = 0
 
-    while(i < list.length) {
-      if(!predicate(list[i])) {
+    while (i < list.length) {
+      if (!predicate(list[i], i, list)) {
         return false
       }
 
