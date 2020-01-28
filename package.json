@@ -97,10 +97,10 @@
     ]
   },
   "lint-staged": {
-    "{*.{js,ts},!docs/**/*.js}": [
+    "*.{js,ts}": [
       "xo --fix"
     ],
-    "{*.{json,md},!docs/**/*.{json,md}}": [
+    "*.{json,md}": [
       "prettier --write"
     ]
   },
