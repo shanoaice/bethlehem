@@ -2,7 +2,7 @@ type Predicate<T> = (value: T, index: number, list: T[]) => boolean
 type CurriedEvery<T> = (list: T[]) => boolean
 
 /**
- * Returns true if all elements of the list match the predicate, false if there are any that don't. (curried)
+ * Returns true if all elements of the list match the predicate, false if there are any that don't. (curried) *Notice: This is not equivlant to Array.prototype.every because it uses an custom implementation that does not strictly follow the spec.*
  * ```js
  * const predicate = a => a == 3
  * every(predicate)([3, 3, 3, 3]) //=> true
@@ -13,7 +13,7 @@ type CurriedEvery<T> = (list: T[]) => boolean
  */
 function every<T>(predicate: Predicate<T>): CurriedEvery<T>
 /**
- * Returns true if all elements of the list match the predicate, false if there are any that don't.
+ * Returns true if all elements of the list match the predicate, false if there are any that don't. *Notice: This is not equivlant to Array.prototype.every because it uses an custom implementation that does not strictly follow the spec.*
  * ```js
  * const predicate = a => a == 3
  * every(predicate, [3, 3, 3, 3]) //=> true
