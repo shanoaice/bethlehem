@@ -1,0 +1,30 @@
+name: Github Pages
+
+on:
+  - push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: yarn install and build:docs
+      run: |
+        yarn install
+        yarn build:docs
+      env:
+        CI: true
+    - name: deploy github pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v1
+      with:
+        target_branch: gh-pages
+        build_dir: docs
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
