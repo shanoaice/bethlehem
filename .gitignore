@@ -9,5 +9,8 @@ dist
 coverage
 .vscode
 
+# compiled docs
+docs
+
 # compiled code
 benchmark/impl-bench/all-any/public/index.js
