@@ -42,7 +42,6 @@ function functionalIf<Input, Output>(
         return task(...args)
       }
 
-      console.log(elseTask)
       if (typeof elseTask !== 'undefined') {
         return elseTask(...args)
       }
