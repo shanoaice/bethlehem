@@ -1,7 +1,7 @@
 name: Github Pages
 
 on:
-  - push
+  - release
 
 jobs:
   build:
