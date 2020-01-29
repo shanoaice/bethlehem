@@ -42,6 +42,10 @@ And you can access everything in the `B` global variable.
 
 ## [Documentation](https://ksryy.github.io/bethlehem)
 
+## Benchmark
+
+The benchmarks between bethlehem, ramda and rambda is still a work in progress. There is an [external repo](https://github.com/KsRyY/bethlehem-impl-bench) that stores some benchmark data about possible internal implementations of bethlehem.
+
 ## Development
 
 Before running any command, install all the dependencies using `yarn install` or `npm install`.
