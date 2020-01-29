@@ -9,6 +9,8 @@ import {
   equal,
   every,
   F,
+  flip,
+  flipAll,
   functionalIf,
   functionalSwitch,
   instanceOf,
@@ -20,6 +22,7 @@ import {
   nthArg,
   or,
   repeat,
+  reverse,
   reversedDivide,
   reversedSubtract,
   sequence,
@@ -350,4 +353,28 @@ test('curried join', t => {
 
   t.is(joinWithDash(testArrayOne), '1-2-3-4-5')
   t.is(joinWithDash(testArrayTwo), 'beep-blorp-bleep')
+})
+
+test('reverse', t => {
+  t.deepEqual(reverse([1, 2, 3]), [3, 2, 1])
+  t.deepEqual(reverse([1, 2]), [2, 1])
+  t.deepEqual(reverse([1]), [1])
+  t.deepEqual(reverse([]), [])
+
+  t.is(reverse('abc'), 'cba')
+  t.is(reverse('ab'), 'ba')
+  t.is(reverse('a'), 'a')
+  t.is(reverse(''), '')
+})
+
+test('flip', t => {
+  // eslint-disable-next-line @typescript-eslint/generic-type-naming
+  const mergeThree = <A, B, C>(a: A, b: B, c: C): Array<A | B | C> => [a, b, c]
+  t.deepEqual(flip(mergeThree)(1, 2, 3), [2, 1, 3])
+})
+
+test('flipAll', t => {
+  // eslint-disable-next-line @typescript-eslint/generic-type-naming
+  const mergeThree = <A, B, C>(a: A, b: B, c: C): Array<A | B | C> => [a, b, c]
+  t.deepEqual(flipAll(mergeThree)(1, 2, 3), [3, 2, 1])
 })
