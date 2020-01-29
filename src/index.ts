@@ -6,6 +6,8 @@ import divide from './divide'
 import equal from './equal'
 import every from './every'
 import F from './F'
+import flip from './flip'
+import flipAll from './flipAll'
 import functionalIf from './functionalIf'
 import functionalSwitch from './functionalSwitch'
 import instanceOf from './instanceOf'
@@ -17,6 +19,7 @@ import nth from './nth'
 import nthArg from './nthArg'
 import or from './or'
 import repeat from './repeat'
+import reverse from './reverse'
 import reversedDivide from './reversedDivide'
 import reversedSubtract from './reversedSubtract'
 import sequence from './sequence'
@@ -35,6 +38,8 @@ export {
   divide,
   equal,
   every,
+  flip,
+  flipAll,
   functionalIf,
   functionalSwitch,
   instanceOf,
@@ -46,6 +51,7 @@ export {
   nthArg,
   or,
   repeat,
+  reverse,
   reversedDivide,
   reversedSubtract,
   sequence,
