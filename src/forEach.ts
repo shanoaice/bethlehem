@@ -1,4 +1,4 @@
-type forEachCallback<T> = (val: T, index: number, array: T[]) => void
+type forEachCallback<T> = (val: T, index?: number, array?: T[]) => void
 
 type curriedMap<T> = (array: T[]) => T[]
 
