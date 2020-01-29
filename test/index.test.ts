@@ -11,11 +11,13 @@ import {
   F,
   flip,
   flipAll,
+  forEach,
   functionalIf,
   functionalSwitch,
   instanceOf,
   isNil,
   join,
+  map,
   multiply,
   not,
   nth,
@@ -377,4 +379,45 @@ test('flipAll', t => {
   // eslint-disable-next-line @typescript-eslint/generic-type-naming
   const mergeThree = <A, B, C>(a: A, b: B, c: C): Array<A | B | C> => [a, b, c]
   t.deepEqual(flipAll(mergeThree)(1, 2, 3), [3, 2, 1])
+})
+
+test.cb('forEach', t => {
+  const list = [1, 2, 3, 4, 5]
+  const assertions = [2, 4, 6, 8, 10]
+
+  forEach((val, index) => {
+    t.is(val * 2, assertions[index])
+  }, list)
+
+  t.end()
+})
+
+test.cb('curried forEach', t => {
+  const list = [1, 2, 3, 4, 5]
+  const assertions = [2, 4, 6, 8, 10]
+  const testTimesTwo = forEach((val: number, index) => {
+    t.is(val * 2, assertions[index])
+  })
+
+  testTimesTwo(list)
+
+  t.end()
+})
+
+test('map', t => {
+  const list = [1, 2, 3, 4, 5]
+  const assertions = [2, 4, 6, 8, 10]
+
+  t.deepEqual(
+    map(val => val * 2, list),
+    assertions
+  )
+})
+
+test('curried map', t => {
+  const list = [1, 2, 3, 4, 5]
+  const assertions = [2, 4, 6, 8, 10]
+  const eachTimesTwo = map((val: number) => val * 2)
+
+  t.deepEqual(eachTimesTwo(list), assertions)
 })
