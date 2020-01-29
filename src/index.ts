@@ -8,11 +8,13 @@ import every from './every'
 import F from './F'
 import flip from './flip'
 import flipAll from './flipAll'
+import forEach from './forEach'
 import functionalIf from './functionalIf'
 import functionalSwitch from './functionalSwitch'
 import instanceOf from './instanceOf'
 import isNil from './isNil'
 import join from './join'
+import map from './map'
 import multiply from './multiply'
 import not from './not'
 import nth from './nth'
@@ -40,11 +42,13 @@ export {
   every,
   flip,
   flipAll,
+  forEach,
   functionalIf,
   functionalSwitch,
   instanceOf,
   isNil,
   join,
+  map,
   multiply,
   not,
   nth,
