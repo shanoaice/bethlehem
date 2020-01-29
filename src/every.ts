@@ -1,4 +1,4 @@
-type Predicate<T> = (value: T, index: number, list: T[]) => boolean
+type Predicate<T> = (value: T, index?: number, list?: T[]) => boolean
 type CurriedEvery<T> = (list: T[]) => boolean
 
 /**
