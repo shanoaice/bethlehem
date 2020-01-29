@@ -1,5 +1,5 @@
-type Predicate<T> = (value: T, index?: number, list?: T[]) => boolean
-type CurriedEvery<T> = (list: T[]) => boolean
+type predicate<T> = (value: T, index: number, list: T[]) => boolean
+type curriedEvery<T> = (list: T[]) => boolean
 
 /**
  * Returns true if all elements of the list match the predicate, false if there are any that don't. (curried) *Notice: This is not equivlant to Array.prototype.every because it uses an custom implementation that does not strictly follow the spec.*
@@ -11,7 +11,7 @@ type CurriedEvery<T> = (list: T[]) => boolean
  *
  * Similar to the Array.prototype.every method, the predicate will also recieve the current index and the current list as the second and the third parameter, respectively.
  */
-function every<T>(predicate: Predicate<T>): CurriedEvery<T>
+function every<T>(predicate: predicate<T>): curriedEvery<T>
 /**
  * Returns true if all elements of the list match the predicate, false if there are any that don't. *Notice: This is not equivlant to Array.prototype.every because it uses an custom implementation that does not strictly follow the spec.*
  * ```js
@@ -22,11 +22,11 @@ function every<T>(predicate: Predicate<T>): CurriedEvery<T>
  *
  * Similar to the Array.prototype.every method, the predicate will also recieve the current index and the current list as the second and the third parameter, respectively.
  */
-function every<T>(predicate: Predicate<T>, list: T[]): boolean
+function every<T>(predicate: predicate<T>, list: T[]): boolean
 function every<T>(
-  predicate: Predicate<T>,
+  predicate: predicate<T>,
   list?: T[]
-): boolean | CurriedEvery<T> {
+): boolean | curriedEvery<T> {
   if (list) {
     let i = 0
 

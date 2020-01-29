@@ -1,7 +1,7 @@
 type mapCallback<ArrayMember, CallbackReturn> = (
   val: ArrayMember,
-  index?: number,
-  array?: ArrayMember[]
+  index: number,
+  array: ArrayMember[]
 ) => CallbackReturn
 
 type curriedMap<ArrayMember, CallbackReturn> = (

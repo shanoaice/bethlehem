@@ -1,5 +1,5 @@
-type Predicate<T> = (value: T, index?: number, list?: T[]) => boolean
-type CurriedSome<T> = (list: T[]) => boolean
+type predicate<T> = (value: T, index: number, list: T[]) => boolean
+type curriedSome<T> = (list: T[]) => boolean
 
 /**
  * Returns true if any elements of the list match the predicate, false otherwise. (Curried)
@@ -11,7 +11,7 @@ type CurriedSome<T> = (list: T[]) => boolean
  *
  * Similar to the Array.prototype.some method, the predicate will also recieve the current index and the current list as the second and the third parameter, respectively.
  */
-function some<T>(predicate: Predicate<T>): CurriedSome<T>
+function some<T>(predicate: predicate<T>): curriedSome<T>
 /**
  * Returns true if any elements of the list match the predicate, false otherwise.
  * ```js
@@ -22,11 +22,11 @@ function some<T>(predicate: Predicate<T>): CurriedSome<T>
  * Similar to the Array.prototype.some method, the predicate will also recieve the current index and the current list as the second and the third parameter, respectively.
  * ```
  */
-function some<T>(predicate: Predicate<T>, list: T[]): boolean
+function some<T>(predicate: predicate<T>, list: T[]): boolean
 function some<T>(
-  predicate: Predicate<T>,
+  predicate: predicate<T>,
   list?: T[]
-): boolean | CurriedSome<T> {
+): boolean | curriedSome<T> {
   if (list) {
     return list.some(predicate)
   }
