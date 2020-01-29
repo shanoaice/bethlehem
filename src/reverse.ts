@@ -20,13 +20,14 @@ function reverse(list: string): string
 function reverse<T>(list: T[]): T[]
 function reverse<T>(list: T[] | string): T[] | string {
   const result = []
-  const array = [...list]
+  // eslint-disable-next-line unicorn/prefer-spread
+  const array = Array.from(list as Iterable<string>)
 
   for (let i = array.length - 1; i >= 0; i--) {
     result.push(array[i])
   }
 
-  return (Array.isArray(list) ? array : array.join('')) as T[] | string
+  return (Array.isArray(list) ? result : result.join('')) as T[] | string
 }
 
 export default reverse
