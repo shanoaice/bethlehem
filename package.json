@@ -39,7 +39,7 @@
     "esm": "3.2.25",
     "espower-loader": "1.2.2",
     "husky": "4.2.1",
-    "lint-staged": "10.0.4",
+    "lint-staged": "10.0.5",
     "power-assert": "1.6.1",
     "prettier": "1.19.1",
     "rambda": "^4.4.0",
