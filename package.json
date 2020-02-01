@@ -39,7 +39,7 @@
     "esm": "3.2.25",
     "espower-loader": "1.2.2",
     "husky": "4.2.1",
-    "lint-staged": "10.0.4",
+    "lint-staged": "10.0.7",
     "power-assert": "1.6.1",
     "prettier": "1.19.1",
     "rambda": "^4.4.0",
@@ -49,11 +49,11 @@
     "tsdx": "0.12.3",
     "tslib": "1.10.0",
     "typedoc": "0.16.8",
-    "typescript": "3.8.0-dev.20200128",
+    "typescript": "3.8.0-dev.20200131",
     "xo": "0.25.3"
   },
   "resolutions": {
-    "**/typescript": "3.8.0-dev.20200128"
+    "**/typescript": "3.8.0-dev.20200131"
   },
   "xo": {
     "ignores": [
