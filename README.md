@@ -1,6 +1,6 @@
 # bethlehem
 
-[![Github Actions Status](https://github.com/KsRyY/bethlehem/workflows/CI/badge.svg)](https://github.com/KsRyY/bethlehem/actions) ![Github Pages Status](https://github.com/KsRyY/bethlehem/workflows/Github%20Pages/badge.svg) [![codecov](https://codecov.io/gh/KsRyY/bethlehem/graph/badge.svg)](https://codecov.io/gh/KsRyY/bethlehem)
+[![Github Actions Status](https://github.com/KsRyY/bethlehem/workflows/CI/badge.svg)](https://github.com/KsRyY/bethlehem/actions) [![Github Pages Status](https://github.com/KsRyY/bethlehem/workflows/Github%20Pages/badge.svg)](https://ksryy.github.io/bethlehem) [![codecov](https://codecov.io/gh/KsRyY/bethlehem/graph/badge.svg)](https://codecov.io/gh/KsRyY/bethlehem) [![npm weekly downloads](https://badgen.net/npm/dw/bethlehem)](http://npm.im/bethlehem)
 
 Bethlehem is a minimal functional programming library for JavaScript. It is inspired by [Ramda](https://github.com/ramda/ramda) but has some significant differences.
 
