@@ -9,6 +9,8 @@ import {
   equal,
   every,
   F,
+  find,
+  findIndex,
   flip,
   flipAll,
   forEach,
@@ -420,4 +422,34 @@ test('curried map', t => {
   const eachTimesTwo = map((val: number) => val * 2)
 
   t.deepEqual(eachTimesTwo(list), assertions)
+})
+
+test('find', t => {
+  const list = [1, 2, 3, 4, 5]
+  const cb = (x: number): boolean => x === 3
+
+  t.is(find(cb, list), 3)
+})
+
+test('curried find', t => {
+  const list = [1, 2, 3, 4, 5]
+  const cb = (x: number): boolean => x === 3
+  const findThree = find(cb)
+
+  t.is(findThree(list), 3)
+})
+
+test('findIndex', t => {
+  const list = [1, 2, 3, 4, 5]
+  const cb = (x: number): boolean => x === 3
+
+  t.is(findIndex(cb, list), 2)
+})
+
+test('curried findIndex', t => {
+  const list = [1, 2, 3, 4, 5]
+  const cb = (x: number): boolean => x === 3
+  const findThreeIndex = findIndex(cb)
+
+  t.is(findThreeIndex(list), 2)
 })
