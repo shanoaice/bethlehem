@@ -6,6 +6,8 @@ import divide from './divide'
 import equal from './equal'
 import every from './every'
 import F from './F'
+import find from './find'
+import findIndex from './findIndex'
 import flip from './flip'
 import flipAll from './flipAll'
 import forEach from './forEach'
@@ -40,6 +42,8 @@ export {
   divide,
   equal,
   every,
+  find,
+  findIndex,
   flip,
   flipAll,
   forEach,
