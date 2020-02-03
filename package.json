@@ -106,7 +106,7 @@
   "ava": {
     "require": [
       "esm",
-      "ts-node/register"
+      "ts-node/register/transpile-only"
     ],
     "babel": true,
     "extensions": [
