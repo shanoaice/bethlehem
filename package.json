@@ -21,7 +21,6 @@
     "prepublishOnly": "tsdx build --format cjs,esm,umd --name B",
     "benchmark": "tsdx build --format cjs,esm,umd --name B && node benchmark/index.js -r benchmark/enable-power-assert.js > benchmark.md"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -104,7 +103,6 @@
       "prettier --write"
     ]
   },
-  "dependencies": {},
   "ava": {
     "require": [
       "esm",
