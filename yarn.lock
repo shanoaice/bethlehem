@@ -8506,10 +8506,10 @@ typedoc@0.16.8:
     typedoc-default-themes "^0.7.2"
     typescript "3.7.x"
 
-typescript@3.7.x, typescript@3.8.0-dev.20200201, typescript@^3.7.3:
-  version "3.8.0-dev.20200201"
-  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.8.0-dev.20200201.tgz#e03210f5c7915f89cb77bd38793d12a69933a1a6"
-  integrity sha1-4DIQ9ceRX4nLd704eT0SppkzoaY=
+typescript@3.7.x, typescript@3.8.0-dev.20200204, typescript@^3.7.3:
+  version "3.8.0-dev.20200204"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.8.0-dev.20200204.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.8.0-dev.20200204.tgz#2dd62775ad397317230a7a805d96ea26bb821c6f"
+  integrity sha1-LdYnda05cxcjCnqAXZbqJruCHG8=
 
 uglify-js@^3.1.4:
   version "3.7.6"
