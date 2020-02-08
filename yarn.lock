@@ -6965,10 +6965,10 @@ rambda@^4.4.0:
   resolved "https://registry.npm.taobao.org/rambda/download/rambda-4.4.0.tgz#c300335e2c0a560f0d6334c200728cd753c5cce4"
   integrity sha1-wwAzXiwKVg8NYzTCAHKM11PFzOQ=
 
-ramda@^0.26.1:
-  version "0.26.1"
-  resolved "https://registry.npm.taobao.org/ramda/download/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
-  integrity sha1-jUE1HrgRHFU1Nhf8O7/62OTTXQY=
+ramda@^0.27.0:
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.0.tgz#915dc29865c0800bf3f69b8fd6c279898b59de43"
+  integrity sha512-pVzZdDpWwWqEVVLshWUHjNwuVP7SfcmPraYuqocJp1yo2U1R7P+5QAfDhdItkuoGqIBnBYrtPp7rEPqDn9HlZA==
 
 rc@^1.2.8:
   version "1.2.8"
@@ -8489,10 +8489,10 @@ typedoc-default-themes@^0.7.2:
     lunr "^2.3.8"
     underscore "^1.9.1"
 
-typedoc@0.16.8:
-  version "0.16.8"
-  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.16.8.tgz#3eb68fcaf8aceacc9f2c521b94360b6e5fd03e2e"
-  integrity sha1-PraPyvis6syfLFIblDYLbl/QPi4=
+typedoc@0.16.9:
+  version "0.16.9"
+  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.16.9.tgz#d6f46f4dea7d3362029927a92981efdf896f435b"
+  integrity sha512-UvOGoy76yqwCXwxPgatwgXWfsQ3FczyZ6ZNLjhCPK+TsDir6LiU3YB6N9XZmPv36E+7LA860mnc8a0v6YADKFw==
   dependencies:
     "@types/minimatch" "3.0.3"
     fs-extra "^8.1.0"
