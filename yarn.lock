@@ -1645,10 +1645,10 @@ atob@^2.1.2:
   resolved "https://registry.npm.taobao.org/atob/download/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
-ava@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npm.taobao.org/ava/download/ava-3.2.0.tgz#ab019f211c24f5d732b26babb7c75635012d3b83"
-  integrity sha1-qwGfIRwk9dcysmurt8dWNQEtO4M=
+ava@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npm.taobao.org/ava/download/ava-3.3.0.tgz#f95d9630e0811e7c03cbd1fa1316a9c8a872c6bb"
+  integrity sha1-+V2WMOCBHnwDy9H6ExapyKhyxrs=
   dependencies:
     "@concordance/react" "^2.0.0"
     ansi-styles "^4.2.1"
