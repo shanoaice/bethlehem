@@ -50,7 +50,7 @@
     "tslib": "1.10.0",
     "typedoc": "0.16.8",
     "typescript": "3.8.0-dev.20200208",
-    "xo": "0.25.3"
+    "xo": "0.25.4"
   },
   "resolutions": {
     "**/typescript": "3.8.0-dev.20200208"
