@@ -1212,7 +1212,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@typescript-eslint/eslint-plugin@^2.12.0", "@typescript-eslint/eslint-plugin@^2.19.2":
+"@typescript-eslint/eslint-plugin@2.19.2", "@typescript-eslint/eslint-plugin@^2.12.0":
   version "2.19.2"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-2.19.2.tgz#e279aaae5d5c1f2547b4cff99204e1250bc7a058"
   integrity sha1-4nmqrl1cHyVHtM/5kgThJQvHoFg=
@@ -1232,9 +1232,9 @@
     "@typescript-eslint/typescript-estree" "2.19.2"
     eslint-scope "^5.0.0"
 
-"@typescript-eslint/parser@^2.12.0", "@typescript-eslint/parser@^2.19.2":
+"@typescript-eslint/parser@2.19.2", "@typescript-eslint/parser@^2.12.0":
   version "2.19.2"
-  resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-2.19.2.tgz?cache=0&sync_timestamp=1581477947310&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.19.2.tgz#21f42c0694846367e7d6a907feb08ab2f89c0879"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-2.19.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.19.2.tgz#21f42c0694846367e7d6a907feb08ab2f89c0879"
   integrity sha1-IfQsBpSEY2fn1qkH/rCKsvicCHk=
   dependencies:
     "@types/eslint-visitor-keys" "^1.0.0"
@@ -3820,7 +3820,7 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-foy@^0.1.29:
+foy@0.1.29:
   version "0.1.29"
   resolved "https://registry.npm.taobao.org/foy/download/foy-0.1.29.tgz#d0a314ac1680b5de61864e891e6c612b00db8c66"
   integrity sha1-0KMUrBaAtd5hhk6JHmxhKwDbjGY=
