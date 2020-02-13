@@ -31,6 +31,7 @@ import some from './some'
 import strictEqual from './strictEqual'
 import subtract from './subtract'
 import T from './T'
+import toString from './toString'
 
 export {
   F,
@@ -65,5 +66,6 @@ export {
   sequence,
   some,
   strictEqual,
-  subtract
+  subtract,
+  toString
 }
