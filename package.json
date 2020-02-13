@@ -13,13 +13,13 @@
   ],
   "scripts": {
     "watch": "ava --watch",
-    "build": "tsdx build --format cjs,esm,umd --name B",
-    "build:docs": "typedoc src && shx touch docs/.nojekyll",
+    "build": "foy build",
+    "build:docs": "foy build:docs",
     "test": "ava --verbose",
-    "test:coverage": "c8 --exclude '{docs,dist,benchmark,coverage}/**/*' --all ava --timeout 2m && c8 report -r lcov",
+    "test:coverage": "foy test:coverage",
     "lint": "xo",
-    "prepublishOnly": "tsdx build --format cjs,esm,umd --name B",
-    "benchmark": "tsdx build --format cjs,esm,umd --name B && node benchmark/index.js -r benchmark/enable-power-assert.js > benchmark.md"
+    "prepublishOnly": "foy build",
+    "benchmark": "foy benchmark"
   },
   "husky": {
     "hooks": {
@@ -28,6 +28,8 @@
   },
   "devDependencies": {
     "@ava/babel": "1.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
     "ava": "3.3.0",
     "c8": "7.1.0",
     "chuhai": "1.2.0",
@@ -37,13 +39,13 @@
     "eslint-plugin-prettier": "3.1.2",
     "esm": "3.2.25",
     "espower-loader": "1.2.2",
+    "foy": "^0.1.29",
     "husky": "4.2.3",
     "lint-staged": "10.0.7",
     "power-assert": "1.6.1",
     "prettier": "1.19.1",
     "rambda": "^4.4.0",
     "ramda": "^0.26.1",
-    "shx": "0.3.2",
     "ts-node": "8.6.2",
     "tsdx": "0.12.3",
     "tslib": "1.10.0",
@@ -88,6 +90,23 @@
             {
               "cases": {
                 "kebabCase": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "files": "Foyfile.js",
+        "extends": [
+          "rem",
+          "plugin:prettier/recommended"
+        ],
+        "rules": {
+          "unicorn/filename-case": [
+            "error",
+            {
+              "cases": {
+                "pascalCase": true
               }
             }
           ]
