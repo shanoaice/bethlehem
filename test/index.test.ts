@@ -373,13 +373,11 @@ test('reverse', t => {
 })
 
 test('flip', t => {
-  // eslint-disable-next-line @typescript-eslint/generic-type-naming
   const mergeThree = <A, B, C>(a: A, b: B, c: C): Array<A | B | C> => [a, b, c]
   t.deepEqual(flip(mergeThree)(1, 2, 3), [2, 1, 3])
 })
 
 test('flipAll', t => {
-  // eslint-disable-next-line @typescript-eslint/generic-type-naming
   const mergeThree = <A, B, C>(a: A, b: B, c: C): Array<A | B | C> => [a, b, c]
   t.deepEqual(flipAll(mergeThree)(1, 2, 3), [3, 2, 1])
 })
