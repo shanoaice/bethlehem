@@ -1,5 +1,3 @@
-import test from 'ava'
-
 import {
   add,
   always,
@@ -33,8 +31,11 @@ import {
   some,
   strictEqual,
   subtract,
-  T
+  T,
+  toString
 } from '../src'
+
+import test from 'ava'
 
 const addOne = (a: number): number => {
   return a + 1
@@ -452,4 +453,14 @@ test('curried findIndex', t => {
   const findThreeIndex = findIndex(cb)
 
   t.is(findThreeIndex(list), 2)
+})
+
+test('toString', t => {
+  t.is(toString({}), '[object Object]')
+  t.is(toString([]), '[object Array]')
+  t.is(toString(9), '[object Number]')
+  t.is(toString(true), '[object Boolean]')
+  t.is(toString('a'), '[object String]')
+  t.is(toString(null), '[object Null]')
+  t.is(toString(undefined), '[object Undefined]')
 })
