@@ -8772,10 +8772,10 @@ xml-name-validator@^3.0.0:
   resolved "https://registry.npm.taobao.org/xml-name-validator/download/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
   integrity sha1-auc+Bt5NjG5H+fsYH3jWSK1FfGo=
 
-xo@0.26.0:
-  version "0.26.0"
-  resolved "https://registry.npm.taobao.org/xo/download/xo-0.26.0.tgz#3bfc21aeeb3f81cdcd60f45da86b4a8aa8fe9f08"
-  integrity sha1-O/whrus/gc3NYPRdqGtKiqj+nwg=
+xo@0.26.1:
+  version "0.26.1"
+  resolved "https://registry.npm.taobao.org/xo/download/xo-0.26.1.tgz#fdae82ab0ae99cbb777c974a363ccccf2bd08160"
+  integrity sha1-/a6CqwrpnLt3fJdKNjzMzyvQgWA=
   dependencies:
     arrify "^2.0.1"
     debug "^4.1.0"
