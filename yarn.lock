@@ -8311,10 +8311,10 @@ typedoc-default-themes@^0.7.2:
     lunr "^2.3.8"
     underscore "^1.9.1"
 
-typedoc@0.16.8:
-  version "0.16.8"
-  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.16.8.tgz#3eb68fcaf8aceacc9f2c521b94360b6e5fd03e2e"
-  integrity sha1-PraPyvis6syfLFIblDYLbl/QPi4=
+typedoc@0.16.10:
+  version "0.16.10"
+  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.16.10.tgz#217cd4243c9b4d85f49b94323c178f6d279bfb9c"
+  integrity sha1-IXzUJDybTYX0m5QyPBePbSeb+5w=
   dependencies:
     "@types/minimatch" "3.0.3"
     fs-extra "^8.1.0"
