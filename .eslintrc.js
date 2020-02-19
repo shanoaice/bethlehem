@@ -5,6 +5,12 @@ module.exports = {
   env: {
     'shared-node-browser': true
   },
+  plugins: [
+    'unicorn',
+    'prettier',
+    '@typescript-eslint/eslint-plugin',
+    'ava'
+  ],
   extends: [
     'xo',
     'rem',
