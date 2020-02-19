@@ -321,7 +321,7 @@ test('curried functional if', t => {
 })
 
 test('instanceOf', t => {
-  // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
+  // eslint-disable-next-line no-new-wrappers
   t.true(instanceOf(Number, new Number(1)))
   t.false(instanceOf(Number, 1))
 })
@@ -329,7 +329,7 @@ test('instanceOf', t => {
 test('curried instanceOf', t => {
   const instanceOfNumber = instanceOf(Number)
 
-  // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
+  // eslint-disable-next-line no-new-wrappers
   t.true(instanceOfNumber(new Number(1)))
   t.false(instanceOfNumber(1))
 })
