@@ -17,7 +17,7 @@
     "build:docs": "foy build:docs",
     "test": "ava --verbose",
     "test:coverage": "foy test:coverage",
-    "lint": "xo",
+    "lint": "eslint",
     "prepublishOnly": "foy build",
     "benchmark": "foy benchmark"
   },
@@ -28,15 +28,19 @@
   },
   "devDependencies": {
     "@ava/babel": "1.0.1",
-    "@typescript-eslint/eslint-plugin": "2.20.0",
-    "@typescript-eslint/parser": "2.20.0",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
     "ava": "3.3.0",
     "c8": "7.1.0",
     "chuhai": "1.2.0",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "6.10.0",
     "eslint-config-rem": "4.0.0",
+    "eslint-config-xo": "^0.29.1",
     "eslint-config-xo-typescript": "0.26.0",
+    "eslint-plugin-ava": "^10.2.0",
     "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-unicorn": "^16.1.1",
     "esm": "3.2.25",
     "espower-loader": "1.2.2",
     "foy": "0.1.29",
@@ -50,73 +54,14 @@
     "tsdx": "0.12.3",
     "tslib": "1.10.0",
     "typedoc": "0.16.10",
-    "typescript": "3.8.0-dev.20200211",
-    "xo": "0.26.1"
+    "typescript": "3.8.0-dev.20200211"
   },
   "resolutions": {
     "**/typescript": "3.8.0-dev.20200211"
   },
-  "xo": {
-    "ignores": [
-      "docs"
-    ],
-    "extends": [
-      "xo-typescript",
-      "rem",
-      "plugin:prettier/recommended",
-      "prettier/@typescript-eslint"
-    ],
-    "rules": {
-      "unicorn/filename-case": [
-        "error",
-        {
-          "cases": {
-            "camelCase": true,
-            "pascalCase": true
-          }
-        }
-      ]
-    },
-    "overrides": [
-      {
-        "files": "benchmark/**/*.js",
-        "extends": [
-          "rem",
-          "plugin:prettier/recommended"
-        ],
-        "rules": {
-          "unicorn/filename-case": [
-            "error",
-            {
-              "cases": {
-                "kebabCase": true
-              }
-            }
-          ]
-        }
-      },
-      {
-        "files": "Foyfile.js",
-        "extends": [
-          "rem",
-          "plugin:prettier/recommended"
-        ],
-        "rules": {
-          "unicorn/filename-case": [
-            "error",
-            {
-              "cases": {
-                "pascalCase": true
-              }
-            }
-          ]
-        }
-      }
-    ]
-  },
   "lint-staged": {
     "*.{js,ts}": [
-      "xo --fix"
+      "eslint --ext js,ts --fix"
     ],
     "*.{json,md}": [
       "prettier --write"
