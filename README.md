@@ -42,6 +42,8 @@ And you can access everything in the `B` global variable.
 
 ## [Documentation](https://ksryy.github.io/bethlehem)
 
+There could be some undocumented functions, but there should be a similar one in Ramda. Most of the time, referring to their [documentation](https://ramdajs.com/docs) would probably inform you.
+
 ## Benchmark
 
 The benchmarks between bethlehem, ramda and rambda is still a work in progress. There is an [external repo](https://github.com/KsRyY/bethlehem-impl-bench) that stores some benchmark data about possible internal implementations of bethlehem.
