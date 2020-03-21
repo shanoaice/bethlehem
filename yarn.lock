@@ -5453,9 +5453,9 @@ markdown-escapes@^1.0.0:
   resolved "https://registry.npm.taobao.org/markdown-escapes/download/markdown-escapes-1.0.4.tgz#c95415ef451499d7602b91095f3c8e8975f78535"
   integrity sha1-yVQV70UUmddgK5EJXzyOiXX3hTU=
 
-marked@^0.8.0:
+marked@0.8.0:
   version "0.8.0"
-  resolved "https://registry.npm.taobao.org/marked/download/marked-0.8.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmarked%2Fdownload%2Fmarked-0.8.0.tgz#ec5c0c9b93878dc52dd54be8d0e524097bd81a99"
+  resolved "https://registry.npm.taobao.org/marked/download/marked-0.8.0.tgz#ec5c0c9b93878dc52dd54be8d0e524097bd81a99"
   integrity sha1-7FwMm5OHjcUt1Uvo0OUkCXvYGpk=
 
 matcher@^2.1.0:
@@ -7868,16 +7868,16 @@ typedoc-default-themes@^0.8.0:
     lunr "^2.3.8"
     underscore "^1.9.2"
 
-typedoc@0.17.1:
-  version "0.17.1"
-  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.17.1.tgz#0ea6efcf8c8a4f9490118afc338f3dbb7df849a4"
-  integrity sha1-Dqbvz4yKT5SQEYr8M489u334SaQ=
+typedoc@0.17.2:
+  version "0.17.2"
+  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.17.2.tgz?cache=0&sync_timestamp=1584833107676&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypedoc%2Fdownload%2Ftypedoc-0.17.2.tgz#4b5b47025f1ab7e8d1ab5990bdea52f10becc564"
+  integrity sha1-S1tHAl8at+jRq1mQvepS8QvsxWQ=
   dependencies:
     fs-extra "^8.1.0"
     handlebars "^4.7.3"
     highlight.js "^9.18.1"
     lodash "^4.17.15"
-    marked "^0.8.0"
+    marked "0.8.0"
     minimatch "^3.0.0"
     progress "^2.0.3"
     shelljs "^0.8.3"
