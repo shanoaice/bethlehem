@@ -1803,13 +1803,6 @@ babylon@^6.18.0:
   resolved "https://registry.npm.taobao.org/babylon/download/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
   integrity sha1-ry87iPpvXB5MY00aD46sT1WzleM=
 
-backbone@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npm.taobao.org/backbone/download/backbone-1.4.0.tgz#54db4de9df7c3811c3f032f34749a4cd27f3bd12"
-  integrity sha1-VNtN6d98OBHD8DLzR0mkzSfzvRI=
-  dependencies:
-    underscore ">=1.8.3"
-
 bail@^1.0.0:
   version "1.0.5"
   resolved "https://registry.npm.taobao.org/bail/download/bail-1.0.5.tgz?cache=0&sync_timestamp=1579948347126&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbail%2Fdownload%2Fbail-1.0.5.tgz#b6fa133404a392cbc1f8c4bf63f5953351e7a776"
@@ -4973,11 +4966,6 @@ jpjs@^1.2.1:
   resolved "https://registry.npm.taobao.org/jpjs/download/jpjs-1.2.1.tgz#f343833de8838a5beba1f42d5a219be0114c44b7"
   integrity sha1-80ODPeiDilvrofQtWiGb4BFMRLc=
 
-jquery@^3.4.1:
-  version "3.4.1"
-  resolved "https://registry.npm.taobao.org/jquery/download/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
-  integrity sha1-cU8fjZ3eS9+lV2S6N+8hRjDYDvI=
-
 js-string-escape@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/js-string-escape/download/js-string-escape-1.0.1.tgz#e2625badbc0d67c7533e9edc1068c587ae4137ef"
@@ -7858,20 +7846,17 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typedoc-default-themes@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.npm.taobao.org/typedoc-default-themes/download/typedoc-default-themes-0.8.0.tgz?cache=0&sync_timestamp=1584315407497&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypedoc-default-themes%2Fdownload%2Ftypedoc-default-themes-0.8.0.tgz#991d6121d492e662eb371f30edc982440fe04a63"
-  integrity sha1-mR1hIdSS5mLrNx8w7cmCRA/gSmM=
+typedoc-default-themes@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.npm.taobao.org/typedoc-default-themes/download/typedoc-default-themes-0.9.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypedoc-default-themes%2Fdownload%2Ftypedoc-default-themes-0.9.0.tgz#170132ddcdfb10823a0b006b0e084ebd4acb540c"
+  integrity sha1-FwEy3c37EII6CwBrDghOvUrLVAw=
   dependencies:
-    backbone "^1.4.0"
-    jquery "^3.4.1"
     lunr "^2.3.8"
-    underscore "^1.9.2"
 
-typedoc@0.17.2:
-  version "0.17.2"
-  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.17.2.tgz?cache=0&sync_timestamp=1584833107676&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypedoc%2Fdownload%2Ftypedoc-0.17.2.tgz#4b5b47025f1ab7e8d1ab5990bdea52f10becc564"
-  integrity sha1-S1tHAl8at+jRq1mQvepS8QvsxWQ=
+typedoc@0.17.3:
+  version "0.17.3"
+  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.17.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypedoc%2Fdownload%2Ftypedoc-0.17.3.tgz#cd5b598f851a41a90d82b7651da35e62cf4fa0e4"
+  integrity sha1-zVtZj4UaQakNgrdlHaNeYs9PoOQ=
   dependencies:
     fs-extra "^8.1.0"
     handlebars "^4.7.3"
@@ -7881,7 +7866,7 @@ typedoc@0.17.2:
     minimatch "^3.0.0"
     progress "^2.0.3"
     shelljs "^0.8.3"
-    typedoc-default-themes "^0.8.0"
+    typedoc-default-themes "^0.9.0"
 
 typescript@3.8.3, typescript@^3.7.3:
   version "3.8.3"
@@ -7895,11 +7880,6 @@ uglify-js@^3.1.4:
   dependencies:
     commander "~2.20.3"
     source-map "~0.6.1"
-
-underscore@>=1.8.3, underscore@^1.9.2:
-  version "1.9.2"
-  resolved "https://registry.npm.taobao.org/underscore/download/underscore-1.9.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Funderscore%2Fdownload%2Funderscore-1.9.2.tgz#0c8d6f536d6f378a5af264a72f7bec50feb7cf2f"
-  integrity sha1-DI1vU21vN4pa8mSnL3vsUP63zy8=
 
 unherit@^1.0.4:
   version "1.1.3"
