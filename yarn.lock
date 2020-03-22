@@ -7708,10 +7708,10 @@ ts-jest@^24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-ts-node@8.7.0:
-  version "8.7.0"
-  resolved "https://registry.npm.taobao.org/ts-node/download/ts-node-8.7.0.tgz?cache=0&sync_timestamp=1584565710271&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fts-node%2Fdownload%2Fts-node-8.7.0.tgz#266186947596bef9f3a034687595b30e31b20976"
-  integrity sha1-JmGGlHWWvvnzoDRodZWzDjGyCXY=
+ts-node@8.8.0:
+  version "8.8.0"
+  resolved "https://registry.npm.taobao.org/ts-node/download/ts-node-8.8.0.tgz#41a301811ac96174db75c24462ec7ebadfa9668b"
+  integrity sha1-QaMBgRrJYXTbdcJEYux+ut+pZos=
   dependencies:
     arg "^4.1.0"
     diff "^4.0.1"
