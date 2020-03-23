@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@ava/babel": "1.0.1",
-    "@typescript-eslint/eslint-plugin": "2.24.0",
-    "@typescript-eslint/parser": "2.24.0",
+    "@typescript-eslint/eslint-plugin": "2.25.0",
+    "@typescript-eslint/parser": "2.25.0",
     "ava": "3.5.1",
     "c8": "7.1.0",
     "chuhai": "1.2.0",
