@@ -3002,10 +3002,10 @@ eslint-config-rem@4.0.0:
   dependencies:
     eslint-plugin-markdown "^1.0.0-beta.6"
 
-eslint-config-xo-typescript@0.26.0:
-  version "0.26.0"
-  resolved "https://registry.npm.taobao.org/eslint-config-xo-typescript/download/eslint-config-xo-typescript-0.26.0.tgz#c9e337d07f2b571d6fabe00b8fd31f117c9d2943"
-  integrity sha1-yeM30H8rVx1vq+ALj9MfEXydKUM=
+eslint-config-xo-typescript@0.27.0:
+  version "0.27.0"
+  resolved "https://registry.npm.taobao.org/eslint-config-xo-typescript/download/eslint-config-xo-typescript-0.27.0.tgz#9b9febe1f673af9ba936b85f5e5b8669f2505f67"
+  integrity sha1-m5/r4fZzr5upNrhfXluGafJQX2c=
 
 eslint-config-xo@0.29.1:
   version "0.29.1"
