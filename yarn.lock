@@ -3120,10 +3120,10 @@ eslint-plugin-react@^7.14.3:
     resolve "^1.14.2"
     string.prototype.matchall "^4.0.2"
 
-eslint-plugin-unicorn@18.0.0:
-  version "18.0.0"
-  resolved "https://registry.npm.taobao.org/eslint-plugin-unicorn/download/eslint-plugin-unicorn-18.0.0.tgz?cache=0&sync_timestamp=1585229150473&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-unicorn%2Fdownload%2Feslint-plugin-unicorn-18.0.0.tgz#94a8477d47f4d25fc931a27658dff44c0fcbc192"
-  integrity sha1-lKhHfUf00l/JMaJ2WN/0TA/LwZI=
+eslint-plugin-unicorn@18.0.1:
+  version "18.0.1"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-unicorn/download/eslint-plugin-unicorn-18.0.1.tgz#8d3285ffa57b2f6b07550b94e62228d93bf61813"
+  integrity sha1-jTKF/6V7L2sHVQuU5iIo2Tv2GBM=
   dependencies:
     ci-info "^2.0.0"
     clean-regexp "^1.0.0"

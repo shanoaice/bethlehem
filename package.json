@@ -40,7 +40,7 @@
     "eslint-config-xo-typescript": "0.27.0",
     "eslint-plugin-ava": "10.2.0",
     "eslint-plugin-prettier": "3.1.2",
-    "eslint-plugin-unicorn": "18.0.0",
+    "eslint-plugin-unicorn": "18.0.1",
     "esm": "3.2.25",
     "espower-loader": "1.2.2",
     "foy": "0.1.29",
