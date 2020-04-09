@@ -44,7 +44,7 @@
     "esm": "3.2.25",
     "espower-loader": "1.2.2",
     "foy": "0.1.29",
-    "husky": "4.2.3",
+    "husky": "4.2.4",
     "lint-staged": "10.1.3",
     "power-assert": "1.6.1",
     "prettier": "2.0.3",
