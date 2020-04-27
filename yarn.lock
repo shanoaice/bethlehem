@@ -1586,10 +1586,10 @@ atob@^2.1.2:
   resolved "https://registry.npm.taobao.org/atob/download/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
-ava@3.8.0:
-  version "3.8.0"
-  resolved "https://registry.npm.taobao.org/ava/download/ava-3.8.0.tgz?cache=0&sync_timestamp=1587918761866&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fava%2Fdownload%2Fava-3.8.0.tgz#2429e2aa275a7ab0137e085606387fdb64e2c4e5"
-  integrity sha1-JCniqidaerATfghWBjh/22TixOU=
+ava@3.8.1:
+  version "3.8.1"
+  resolved "https://registry.npm.taobao.org/ava/download/ava-3.8.1.tgz#ec50814f8e6c769b8ed0dcc64bca990cd06bb2d1"
+  integrity sha1-7FCBT45sdpuO0NzGS8qZDNBrstE=
   dependencies:
     "@concordance/react" "^2.0.0"
     acorn "^7.1.1"
@@ -1624,7 +1624,7 @@ ava@3.8.0:
     is-plain-object "^3.0.0"
     is-promise "^3.0.0"
     lodash "^4.17.15"
-    matcher "^2.1.0"
+    matcher "^3.0.0"
     md5-hex "^3.0.1"
     mem "^6.1.0"
     ms "^2.1.2"
@@ -2963,6 +2963,11 @@ escape-string-regexp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-2.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fescape-string-regexp%2Fdownload%2Fescape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
   integrity sha1-owME6Z2qMuI7L9IPUbq9B8/8o0Q=
+
+escape-string-regexp@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-4.0.0.tgz?cache=0&sync_timestamp=1587627212242&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fescape-string-regexp%2Fdownload%2Fescape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
+  integrity sha1-FLqDpdNz49MR5a/KKc9b+tllvzQ=
 
 escodegen@^1.10.0, escodegen@^1.7.0, escodegen@^1.9.1:
   version "1.14.1"
@@ -5506,12 +5511,12 @@ marked@1.0.0:
   resolved "https://registry.npm.taobao.org/marked/download/marked-1.0.0.tgz#d35784245a04871e5988a491e28867362e941693"
   integrity sha1-01eEJFoEhx5ZiKSR4ohnNi6UFpM=
 
-matcher@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npm.taobao.org/matcher/download/matcher-2.1.0.tgz?cache=0&sync_timestamp=1574142964872&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmatcher%2Fdownload%2Fmatcher-2.1.0.tgz#64e1041c15b993e23b786f93320a7474bf833c28"
-  integrity sha1-ZOEEHBW5k+I7eG+TMgp0dL+DPCg=
+matcher@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/matcher/download/matcher-3.0.0.tgz#bd9060f4c5b70aa8041ccc6f80368760994f30ca"
+  integrity sha1-vZBg9MW3CqgEHMxvgDaHYJlPMMo=
   dependencies:
-    escape-string-regexp "^2.0.0"
+    escape-string-regexp "^4.0.0"
 
 md5-hex@^2.0.0:
   version "2.0.0"
