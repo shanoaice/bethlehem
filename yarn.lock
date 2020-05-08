@@ -1593,10 +1593,10 @@ atob@^2.1.2:
   resolved "https://registry.npm.taobao.org/atob/download/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
-ava@3.8.1:
-  version "3.8.1"
-  resolved "https://registry.npm.taobao.org/ava/download/ava-3.8.1.tgz#ec50814f8e6c769b8ed0dcc64bca990cd06bb2d1"
-  integrity sha1-7FCBT45sdpuO0NzGS8qZDNBrstE=
+ava@3.8.2:
+  version "3.8.2"
+  resolved "https://registry.npm.taobao.org/ava/download/ava-3.8.2.tgz#877c9eb861763a185bbabd54f359e1fbe57d1754"
+  integrity sha1-h3yeuGF2Ohhbur1U81nh++V9F1Q=
   dependencies:
     "@concordance/react" "^2.0.0"
     acorn "^7.1.1"
@@ -1629,7 +1629,7 @@ ava@3.8.1:
     indent-string "^4.0.0"
     is-error "^2.2.2"
     is-plain-object "^3.0.0"
-    is-promise "^3.0.0"
+    is-promise "^4.0.0"
     lodash "^4.17.15"
     matcher "^3.0.0"
     md5-hex "^3.0.1"
@@ -1640,12 +1640,12 @@ ava@3.8.1:
     picomatch "^2.2.2"
     pkg-conf "^3.1.0"
     plur "^4.0.0"
-    pretty-ms "^6.0.1"
+    pretty-ms "^7.0.0"
     read-pkg "^5.2.0"
     resolve-cwd "^3.0.0"
     slash "^3.0.0"
     source-map-support "^0.5.19"
-    stack-utils "^2.0.1"
+    stack-utils "^2.0.2"
     strip-ansi "^6.0.0"
     supertap "^1.0.0"
     temp-dir "^2.0.0"
@@ -4435,10 +4435,10 @@ is-promise@^2.1.0:
   resolved "https://registry.npm.taobao.org/is-promise/download/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
   integrity sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
 
-is-promise@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.taobao.org/is-promise/download/is-promise-3.0.0.tgz#1f88031af842d9203dc1777cba40411e848f9beb"
-  integrity sha1-H4gDGvhC2SA9wXd8ukBBHoSPm+s=
+is-promise@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/is-promise/download/is-promise-4.0.0.tgz?cache=0&sync_timestamp=1588002456069&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-promise%2Fdownload%2Fis-promise-4.0.0.tgz#42ff9f84206c1991d26debf520dd5c01042dd2f3"
+  integrity sha1-Qv+fhCBsGZHSbev1IN1cAQQt0vM=
 
 is-reference@^1.1.2:
   version "1.1.4"
@@ -6395,10 +6395,10 @@ pretty-format@^24.9.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
-pretty-ms@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.npm.taobao.org/pretty-ms/download/pretty-ms-6.0.1.tgz#03ec6cfee20329f142645e63efad96bb775d3da4"
-  integrity sha1-A+xs/uIDKfFCZF5j762Wu3ddPaQ=
+pretty-ms@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npm.taobao.org/pretty-ms/download/pretty-ms-7.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpretty-ms%2Fdownload%2Fpretty-ms-7.0.0.tgz#45781273110caf35f55cab21a8a9bd403a233dc0"
+  integrity sha1-RXgScxEMrzX1XKshqKm9QDojPcA=
   dependencies:
     parse-ms "^2.1.0"
 
@@ -7346,10 +7346,10 @@ stack-utils@^1.0.1:
   resolved "https://registry.npm.taobao.org/stack-utils/download/stack-utils-1.0.2.tgz?cache=0&sync_timestamp=1576219856311&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstack-utils%2Fdownload%2Fstack-utils-1.0.2.tgz#33eba3897788558bebfc2db059dc158ec36cebb8"
   integrity sha1-M+ujiXeIVYvr/C2wWdwVjsNs67g=
 
-stack-utils@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npm.taobao.org/stack-utils/download/stack-utils-2.0.1.tgz?cache=0&sync_timestamp=1576219856311&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstack-utils%2Fdownload%2Fstack-utils-2.0.1.tgz#3df48345a3b92adc06038f0e95782df61beff742"
-  integrity sha1-PfSDRaO5KtwGA48OlXgt9hvv90I=
+stack-utils@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/stack-utils/download/stack-utils-2.0.2.tgz?cache=0&sync_timestamp=1588087169721&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstack-utils%2Fdownload%2Fstack-utils-2.0.2.tgz#5cf48b4557becb4638d0bc4f21d23f5d19586593"
+  integrity sha1-XPSLRVe+y0Y40LxPIdI/XRlYZZM=
   dependencies:
     escape-string-regexp "^2.0.0"
 
