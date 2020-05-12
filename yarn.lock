@@ -7845,10 +7845,10 @@ tslib@1.10.0, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha1-w8GflZc/sKYpc/sJ2Q2WHuQ+XIo=
 
-tslib@1.11.2:
-  version "1.11.2"
-  resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.11.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-1.11.2.tgz#9c79d83272c9a7aaf166f73915c9667ecdde3cc9"
-  integrity sha1-nHnYMnLJp6rxZvc5Fclmfs3ePMk=
+tslib@1.12.0:
+  version "1.12.0"
+  resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.12.0.tgz?cache=0&sync_timestamp=1589307182174&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-1.12.0.tgz#d1fc9cacd06a1456c62f2902b361573e83d66473"
+  integrity sha1-0fycrNBqFFbGLykCs2FXPoPWZHM=
 
 tsutils@^3.17.1:
   version "3.17.1"
