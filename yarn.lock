@@ -1975,10 +1975,10 @@ builtin-modules@^3.1.0:
   resolved "https://registry.npm.taobao.org/builtin-modules/download/builtin-modules-3.1.0.tgz#aad97c15131eb76b65b50ef208e7584cd76a7484"
   integrity sha1-qtl8FRMet2tltQ7yCOdYTNdqdIQ=
 
-c8@7.2.0:
-  version "7.2.0"
-  resolved "https://registry.npm.taobao.org/c8/download/c8-7.2.0.tgz#47cf3ab18d0ff3c0254572f6f4a70cee3d702dbf"
-  integrity sha1-R886sY0P88AlRXL29KcM7j1wLb8=
+c8@7.2.1:
+  version "7.2.1"
+  resolved "https://registry.npm.taobao.org/c8/download/c8-7.2.1.tgz#a55a2c1ef91d63ba099bc93bcb53fe7cbc063439"
+  integrity sha1-pVosHvkdY7oJm8k7y1P+fLwGNDk=
   dependencies:
     "@bcoe/v8-coverage" "^0.2.3"
     "@istanbuljs/schema" "^0.1.2"
