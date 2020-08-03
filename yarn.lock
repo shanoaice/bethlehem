@@ -1992,10 +1992,10 @@ builtin-modules@^3.1.0:
   resolved "https://registry.npm.taobao.org/builtin-modules/download/builtin-modules-3.1.0.tgz#aad97c15131eb76b65b50ef208e7584cd76a7484"
   integrity sha1-qtl8FRMet2tltQ7yCOdYTNdqdIQ=
 
-c8@7.2.1:
-  version "7.2.1"
-  resolved "https://registry.npm.taobao.org/c8/download/c8-7.2.1.tgz#a55a2c1ef91d63ba099bc93bcb53fe7cbc063439"
-  integrity sha1-pVosHvkdY7oJm8k7y1P+fLwGNDk=
+c8@7.3.0:
+  version "7.3.0"
+  resolved "https://registry.npm.taobao.org/c8/download/c8-7.3.0.tgz?cache=0&sync_timestamp=1596430638112&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fc8%2Fdownload%2Fc8-7.3.0.tgz#8f3824f5434339805b302b7c089525a4087b259e"
+  integrity sha1-jzgk9UNDOYBbMCt8CJUlpAh7JZ4=
   dependencies:
     "@bcoe/v8-coverage" "^0.2.3"
     "@istanbuljs/schema" "^0.1.2"
@@ -2007,7 +2007,7 @@ c8@7.2.1:
     istanbul-reports "^3.0.2"
     rimraf "^3.0.0"
     test-exclude "^6.0.0"
-    v8-to-istanbul "^4.1.2"
+    v8-to-istanbul "^5.0.0"
     yargs "^15.0.0"
     yargs-parser "^18.0.0"
 
@@ -8310,10 +8310,10 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.npm.taobao.org/v8-compile-cache/download/v8-compile-cache-2.1.0.tgz#e14de37b31a6d194f5690d67efc4e7f6fc6ab30e"
   integrity sha1-4U3jezGm0ZT1aQ1n78Tn9vxqsw4=
 
-v8-to-istanbul@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.npm.taobao.org/v8-to-istanbul/download/v8-to-istanbul-4.1.2.tgz?cache=0&sync_timestamp=1581225006067&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fv8-to-istanbul%2Fdownload%2Fv8-to-istanbul-4.1.2.tgz#387d173be5383dbec209d21af033dcb892e3ac82"
-  integrity sha1-OH0XO+U4Pb7CCdIa8DPcuJLjrII=
+v8-to-istanbul@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/v8-to-istanbul/download/v8-to-istanbul-5.0.0.tgz#87d2d1827ccd1821b84b5bcbe2d82ad8b6f3787b"
+  integrity sha1-h9LRgnzNGCG4S1vL4tgq2LbzeHs=
   dependencies:
     "@types/istanbul-lib-coverage" "^2.0.1"
     convert-source-map "^1.6.0"
