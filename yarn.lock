@@ -3075,10 +3075,10 @@ eslint-module-utils@^2.4.1:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-ava@10.3.1:
-  version "10.3.1"
-  resolved "https://registry.npm.taobao.org/eslint-plugin-ava/download/eslint-plugin-ava-10.3.1.tgz?cache=0&sync_timestamp=1592032085640&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-ava%2Fdownload%2Feslint-plugin-ava-10.3.1.tgz#5415b910a0d5ddaf0e52c9322385977cf78ac466"
-  integrity sha1-VBW5EKDV3a8OUskyI4WXfPeKxGY=
+eslint-plugin-ava@10.5.0:
+  version "10.5.0"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-ava/download/eslint-plugin-ava-10.5.0.tgz#2dc55dd6fc5d1bdd6f7a9ff32c6f199ce2905e33"
+  integrity sha1-LcVd1vxdG91vep/zLG8ZnOKQXjM=
   dependencies:
     deep-strict-equal "^0.2.0"
     enhance-visitors "^1.0.0"
