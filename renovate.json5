@@ -7,7 +7,7 @@
   major: {
     automerge: false,
   },
-  commitMessagePrefix: '📦Deps: ',
+  commitMessagePrefix: '(deps) ',
   ignoreDeps: ['ramda', 'rambda'],
   yarnrc: 'registry "https://registry.npm.taobao.org"'
 }
