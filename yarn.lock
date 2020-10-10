@@ -2124,10 +2124,10 @@ c8@7.3.3:
     yargs "^16.0.0"
     yargs-parser "^20.0.0"
 
-cac@^6.3.12:
-  version "6.5.6"
-  resolved "https://registry.npm.taobao.org/cac/download/cac-6.5.6.tgz#0120e39c9e56a7ab6418b078e6ad0595f2982375"
-  integrity sha1-ASDjnJ5Wp6tkGLB45q0FlfKYI3U=
+cac@^6.6.1:
+  version "6.6.1"
+  resolved "https://registry.npm.taobao.org/cac/download/cac-6.6.1.tgz#3dde3f6943f45d42a56729ea3573c08b3e7b6a6d"
+  integrity sha1-Pd4/aUP0XUKlZynqNXPAiz57am0=
 
 cache-base@^1.0.1:
   version "1.0.1"
@@ -2373,6 +2373,11 @@ cli-spinners@^2.0.0, cli-spinners@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npm.taobao.org/cli-spinners/download/cli-spinners-2.2.0.tgz#e8b988d9206c692302d8ee834e7a85c0144d8f77"
   integrity sha1-6LmI2SBsaSMC2O6DTnqFwBRNj3c=
+
+cli-spinners@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npm.taobao.org/cli-spinners/download/cli-spinners-2.4.0.tgz?cache=0&sync_timestamp=1595080594409&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcli-spinners%2Fdownload%2Fcli-spinners-2.4.0.tgz#c6256db216b878cfba4720e719cec7cf72685d7f"
+  integrity sha1-xiVtsha4eM+6RyDnGc7Hz3JoXX8=
 
 cli-truncate@2.1.0, cli-truncate@^2.1.0:
   version "2.1.0"
@@ -3705,6 +3710,21 @@ execa@^4.0.1:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
+execa@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.npm.taobao.org/execa/download/execa-4.0.3.tgz?cache=0&sync_timestamp=1594145190090&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fexeca%2Fdownload%2Fexeca-4.0.3.tgz#0a34dabbad6d66100bd6f2c576c8669403f317f2"
+  integrity sha1-CjTau61tZhAL1vLFdshmlAPzF/I=
+  dependencies:
+    cross-spawn "^7.0.0"
+    get-stream "^5.0.0"
+    human-signals "^1.1.1"
+    is-stream "^2.0.0"
+    merge-stream "^2.0.0"
+    npm-run-path "^4.0.0"
+    onetime "^5.1.0"
+    signal-exit "^3.0.2"
+    strip-final-newline "^2.0.0"
+
 exit@^0.1.2:
   version "0.1.2"
   resolved "https://registry.npm.taobao.org/exit/download/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
@@ -3839,13 +3859,6 @@ fb-watchman@^2.0.0:
   integrity sha1-/IT7OdJwnPP/bXQ3BhV7tXCKioU=
   dependencies:
     bser "2.1.1"
-
-figures@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/figures/download/figures-2.0.0.tgz?cache=0&sync_timestamp=1571715625804&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffigures%2Fdownload%2Ffigures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
-  integrity sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=
-  dependencies:
-    escape-string-regexp "^1.0.5"
 
 figures@^3.0.0:
   version "3.1.0"
@@ -3982,18 +3995,19 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-foy@0.1.29:
-  version "0.1.29"
-  resolved "https://registry.npm.taobao.org/foy/download/foy-0.1.29.tgz#d0a314ac1680b5de61864e891e6c612b00db8c66"
-  integrity sha1-0KMUrBaAtd5hhk6JHmxhKwDbjGY=
+foy@0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npm.taobao.org/foy/download/foy-0.2.1.tgz?cache=0&sync_timestamp=1600917344262&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffoy%2Fdownload%2Ffoy-0.2.1.tgz#6c27e39f601dc1c0f43de53736e285ada39bcefa"
+  integrity sha1-bCfjn2AdwcD0PeU3NuKFraObzvo=
   dependencies:
-    cac "^6.3.12"
-    chalk "^2.4.1"
-    cli-spinners "^1.3.1"
-    execa "^1.0.0"
-    figures "^2.0.0"
-    strip-ansi "^5.0.0"
-    tslib "^1.10.0"
+    cac "^6.6.1"
+    chalk "^4.1.0"
+    cli-spinners "^2.4.0"
+    execa "^4.0.3"
+    figures "^3.2.0"
+    shell-parser "^1.0.0"
+    strip-ansi "^6.0.0"
+    tslib "^2.0.1"
     wcwidth "^1.0.1"
 
 fragment-cache@^0.2.1:
@@ -7484,6 +7498,11 @@ shebang-regex@^3.0.0:
   resolved "https://registry.npm.taobao.org/shebang-regex/download/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
+shell-parser@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/shell-parser/download/shell-parser-1.0.0.tgz#fa5df05622ecb7cb3f395e0c9e7a44c86e1349be"
+  integrity sha1-+l3wViLst8s/OV4MnnpEyG4TSb4=
+
 shelljs@^0.8.3:
   version "0.8.3"
   resolved "https://registry.npm.taobao.org/shelljs/download/shelljs-0.8.3.tgz#a7f3319520ebf09ee81275b2368adb286659b097"
@@ -8223,12 +8242,12 @@ tsdx@0.13.2:
     tslib "^1.9.3"
     typescript "^3.7.3"
 
-tslib@1.10.0, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.10.0"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha1-w8GflZc/sKYpc/sJ2Q2WHuQ+XIo=
 
-tslib@2.0.3:
+tslib@2.0.3, tslib@^2.0.1:
   version "2.0.3"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-2.0.3.tgz?cache=0&sync_timestamp=1602286826065&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
   integrity sha1-jgdBrEX8DCJuWKF7/D5kubxsphw=
