@@ -45,7 +45,7 @@
     "espower-loader": "1.2.2",
     "foy": "0.2.1",
     "husky": "4.3.0",
-    "lint-staged": "10.4.1",
+    "lint-staged": "10.4.2",
     "power-assert": "1.6.1",
     "prettier": "2.1.2",
     "rambda": "^4.4.0",
