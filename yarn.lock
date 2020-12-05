@@ -4754,10 +4754,10 @@ humanize-duration@^3.15.3:
   resolved "https://registry.npm.taobao.org/humanize-duration/download/humanize-duration-3.21.0.tgz#ae5dc7e67640770cbf6a8d03a5d1138d47c7ce38"
   integrity sha1-rl3H5nZAdwy/ao0DpdETjUfHzjg=
 
-husky@4.3.0:
-  version "4.3.0"
-  resolved "https://registry.npm.taobao.org/husky/download/husky-4.3.0.tgz#0b2ec1d66424e9219d359e26a51c58ec5278f0de"
-  integrity sha1-Cy7B1mQk6SGdNZ4mpRxY7FJ48N4=
+husky@4.3.4:
+  version "4.3.4"
+  resolved "https://registry.npm.taobao.org/husky/download/husky-4.3.4.tgz#676275a10ec5be2e893bd6ff71113bb829cc1f5b"
+  integrity sha1-Z2J1oQ7Fvi6JO9b/cRE7uCnMH1s=
   dependencies:
     chalk "^4.0.0"
     ci-info "^2.0.0"
