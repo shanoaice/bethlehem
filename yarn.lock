@@ -2935,7 +2935,12 @@ configstore@^5.0.1:
     write-file-atomic "^3.0.0"
     xdg-basedir "^4.0.0"
 
-confusing-browser-globals@1.0.9, confusing-browser-globals@^1.0.9:
+confusing-browser-globals@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.npm.taobao.org/confusing-browser-globals/download/confusing-browser-globals-1.0.10.tgz?cache=0&sync_timestamp=1603462793814&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fconfusing-browser-globals%2Fdownload%2Fconfusing-browser-globals-1.0.10.tgz#30d1e7f3d1b882b25ec4933d1d1adac353d20a59"
+  integrity sha1-MNHn89G4grJexJM9HRraw1PSClk=
+
+confusing-browser-globals@^1.0.9:
   version "1.0.9"
   resolved "https://registry.npm.taobao.org/confusing-browser-globals/download/confusing-browser-globals-1.0.9.tgz#72bc13b483c0276801681871d4898516f8f54fdd"
   integrity sha1-crwTtIPAJ2gBaBhx1ImFFvj1T90=
@@ -3647,12 +3652,12 @@ eslint-config-xo-typescript@0.36.0:
   resolved "https://registry.npm.taobao.org/eslint-config-xo-typescript/download/eslint-config-xo-typescript-0.36.0.tgz#4161d6342198c176f7264e76fc5fab20dfcc021e"
   integrity sha1-QWHWNCGYwXb3Jk52/F+rIN/MAh4=
 
-eslint-config-xo@0.33.1:
-  version "0.33.1"
-  resolved "https://registry.npm.taobao.org/eslint-config-xo/download/eslint-config-xo-0.33.1.tgz?cache=0&sync_timestamp=1602930538828&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-xo%2Fdownload%2Feslint-config-xo-0.33.1.tgz#05031d970c3ad5c3b592fc94dc8c8d5459cf44a9"
-  integrity sha1-BQMdlww61cO1kvyU3IyNVFnPRKk=
+eslint-config-xo@0.34.0:
+  version "0.34.0"
+  resolved "https://registry.npm.taobao.org/eslint-config-xo/download/eslint-config-xo-0.34.0.tgz?cache=0&sync_timestamp=1609576747520&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-xo%2Fdownload%2Feslint-config-xo-0.34.0.tgz#c158ab361aec62727219ed3b1971c24311cd9ad4"
+  integrity sha1-wVirNhrsYnJyGe07GXHCQxHNmtQ=
   dependencies:
-    confusing-browser-globals "1.0.9"
+    confusing-browser-globals "1.0.10"
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.3"
