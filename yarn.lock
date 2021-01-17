@@ -8816,10 +8816,10 @@ typedoc-default-themes@^0.12.4:
   resolved "https://registry.npm.taobao.org/typedoc-default-themes/download/typedoc-default-themes-0.12.4.tgz#5cbb79c1d6421f1274e86b1b542934eb557abd4f"
   integrity sha1-XLt5wdZCHxJ06GsbVCk061V6vU8=
 
-typedoc@0.20.15:
-  version "0.20.15"
-  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.20.15.tgz?cache=0&sync_timestamp=1610826798139&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypedoc%2Fdownload%2Ftypedoc-0.20.15.tgz#8e21ceb20b86ff22bb6962dccfa6c3793c50782c"
-  integrity sha1-jiHOsguG/yK7aWLcz6bDeTxQeCw=
+typedoc@0.20.16:
+  version "0.20.16"
+  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.20.16.tgz#c845d32883af905439607ba03c9667b81cdbeb22"
+  integrity sha1-yEXTKIOvkFQ5YHugPJZnuBzb6yI=
   dependencies:
     colors "^1.4.0"
     fs-extra "^9.0.1"
