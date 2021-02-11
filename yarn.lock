@@ -6260,10 +6260,10 @@ markdown-escapes@^1.0.0:
   resolved "https://registry.npm.taobao.org/markdown-escapes/download/markdown-escapes-1.0.4.tgz#c95415ef451499d7602b91095f3c8e8975f78535"
   integrity sha1-yVQV70UUmddgK5EJXzyOiXX3hTU=
 
-marked@^1.2.9:
-  version "1.2.9"
-  resolved "https://registry.npm.taobao.org/marked/download/marked-1.2.9.tgz?cache=0&sync_timestamp=1612383836498&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmarked%2Fdownload%2Fmarked-1.2.9.tgz#53786f8b05d4c01a2a5a76b7d1ec9943d29d72dc"
-  integrity sha1-U3hviwXUwBoqWna30eyZQ9Kdctw=
+marked@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/marked/download/marked-2.0.0.tgz?cache=0&sync_timestamp=1612738063607&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmarked%2Fdownload%2Fmarked-2.0.0.tgz#9662bbcb77ebbded0662a7be66ff929a8611cee5"
+  integrity sha1-lmK7y3frve0GYqe+Zv+SmoYRzuU=
 
 matcher@^3.0.0:
   version "3.0.0"
@@ -8808,17 +8808,17 @@ typedoc-default-themes@^0.12.7:
   resolved "https://registry.npm.taobao.org/typedoc-default-themes/download/typedoc-default-themes-0.12.7.tgz#d44f68d40a3e90a19b5ea7be4cc6ed949afe768d"
   integrity sha1-1E9o1Ao+kKGbXqe+TMbtlJr+do0=
 
-typedoc@0.20.23:
-  version "0.20.23"
-  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.20.23.tgz#963fcb53b4e0f28c50b2e155721766cf53196105"
-  integrity sha1-lj/LU7Tg8oxQsuFVchdmz1MZYQU=
+typedoc@0.20.24:
+  version "0.20.24"
+  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.20.24.tgz#9dd1cb32e44823a5ebbeb54c9b84af85286c5941"
+  integrity sha1-ndHLMuRII6XrvrVMm4SvhShsWUE=
   dependencies:
     colors "^1.4.0"
     fs-extra "^9.1.0"
     handlebars "^4.7.6"
     lodash "^4.17.20"
     lunr "^2.3.9"
-    marked "^1.2.9"
+    marked "^2.0.0"
     minimatch "^3.0.0"
     progress "^2.0.3"
     shelljs "^0.8.4"
