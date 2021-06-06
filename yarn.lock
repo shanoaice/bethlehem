@@ -4477,10 +4477,10 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-foy@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.npm.taobao.org/foy/download/foy-0.2.1.tgz?cache=0&sync_timestamp=1600917344262&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffoy%2Fdownload%2Ffoy-0.2.1.tgz#6c27e39f601dc1c0f43de53736e285ada39bcefa"
-  integrity sha1-bCfjn2AdwcD0PeU3NuKFraObzvo=
+foy@0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/foy/-/foy-0.2.7.tgz#788516f3929274ea4814b2fad7a843d3c04e6b0a"
+  integrity sha512-J6/nrE2FcSJATQJy4FF7j3pRdOPu8w6jWMb2eltfDnC5jf7W5W3y3btvQUf1pRwk0ILHrkp3rsCIflQ7OcDDBQ==
   dependencies:
     cac "^6.6.1"
     chalk "^4.1.0"
