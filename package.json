@@ -54,10 +54,10 @@
     "tsdx": "0.14.1",
     "tslib": "2.3.0",
     "typedoc": "0.20.36",
-    "typescript": "4.1.5"
+    "typescript": "4.3.2"
   },
   "resolutions": {
-    "**/typescript": "4.1.5"
+    "**/typescript": "4.3.2"
   },
   "lint-staged": {
     "*.{js,ts}": [
