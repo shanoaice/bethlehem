@@ -4494,10 +4494,10 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-foy@0.2.9:
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/foy/-/foy-0.2.9.tgz#e44b6296052698d583c2bbf6197920946e96916d"
-  integrity sha512-3S7yJwJHrDs47oGBAToNrfpd4CGloyKUJQXf/2rhoBnjcIg+f32YWJVgIi4Bop2/tGg0aYkCkvdkiwqfrZbYJA==
+foy@0.2.10:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/foy/-/foy-0.2.10.tgz#5b4c5290ebf3bc53a70eade46e8b5f85529b8d41"
+  integrity sha512-oCnlh6QznC/plmQLqO6oNuCPvTzDuJGU7Voy8+2lEraCDo0I+phQTGyhnCJ8Yd2DBzZkoor/nJZSl+VGOfSBPw==
   dependencies:
     cac "^6.6.1"
     chalk "^4.1.0"
