@@ -3691,19 +3691,19 @@ eslint-module-utils@^2.4.1:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-ava@11.0.0:
-  version "11.0.0"
-  resolved "https://registry.npm.taobao.org/eslint-plugin-ava/download/eslint-plugin-ava-11.0.0.tgz?cache=0&sync_timestamp=1597581446730&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-ava%2Fdownload%2Feslint-plugin-ava-11.0.0.tgz#92d98694b4af6d6f2353613af06301d44d6b13a6"
-  integrity sha1-ktmGlLSvbW8jU2E68GMB1E1rE6Y=
+eslint-plugin-ava@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ava/-/eslint-plugin-ava-12.0.0.tgz#451f0fe4a86db3b43e017db83401ea9de4221e52"
+  integrity sha512-v8/GY1IWQn2nOBdVtD/6e0Y6A9PRFjY86a1m5r5FUel+C7iyoQVt7gKqaAc1iRXcQkZq2DDG0aTiQptgnq51cA==
   dependencies:
     deep-strict-equal "^0.2.0"
     enhance-visitors "^1.0.0"
     eslint-utils "^2.1.0"
-    espree "^7.2.0"
+    espree "^7.3.1"
     espurify "^2.0.1"
-    import-modules "^2.0.0"
+    import-modules "^2.1.0"
     micro-spelling-correcter "^1.1.1"
-    pkg-dir "^4.2.0"
+    pkg-dir "^5.0.0"
     resolve-from "^5.0.0"
 
 eslint-plugin-flowtype@^3.13.0:
@@ -4027,7 +4027,7 @@ espree@^6.1.2:
     acorn-jsx "^5.1.0"
     eslint-visitor-keys "^1.1.0"
 
-espree@^7.2.0, espree@^7.3.0:
+espree@^7.3.0:
   version "7.3.0"
   resolved "https://registry.npm.taobao.org/espree/download/espree-7.3.0.tgz?cache=0&sync_timestamp=1598127695889&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fespree%2Fdownload%2Fespree-7.3.0.tgz#dc30437cf67947cf576121ebd780f15eeac72348"
   integrity sha1-3DBDfPZ5R89XYSHr14DxXurHI0g=
@@ -4941,6 +4941,11 @@ import-modules@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/import-modules/download/import-modules-2.0.0.tgz?cache=0&sync_timestamp=1570092046739&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimport-modules%2Fdownload%2Fimport-modules-2.0.0.tgz#9c1e13b4e7a15682f70a6e3fa29534e4540cfc5d"
   integrity sha1-nB4TtOehVoL3Cm4/opU05FQM/F0=
+
+import-modules@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/import-modules/-/import-modules-2.1.0.tgz#abe7df297cb6c1f19b57246eb8b8bd9664b6d8c2"
+  integrity sha512-8HEWcnkbGpovH9yInoisxaSoIg9Brbul+Ju3Kqe2UsYDUBJD/iQjSgEj0zPcTDPKfPp2fs5xlv1i+JSye/m1/A==
 
 imurmurhash@^0.1.4:
   version "0.1.4"
